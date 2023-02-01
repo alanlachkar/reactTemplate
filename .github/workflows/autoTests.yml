@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     strategy:
       matrix:
-        node-version: [14.x, 16.x, 18.x]
+        node-version: [18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
     - uses: actions/checkout@v3
@@ -21,7 +21,7 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - run: yarn --frozen-lockfile
+    - run: yarn install --frozen-lockfile
     # The '--frozen-lockfile' arg installs the versions in the yarn.lock file and prevent updates to the yarn.lock file
     - run: yarn build --if-present
     - run: yarn reports:coverage
