@@ -25,6 +25,6 @@ jobs:
     - run: yarn build
     - run: yarn ut
     - name: Run Cypress Test
-      uses: cypress-io/github-action@v4
+      uses: cypress-io/github-action@v5
       with:
         command: npx cypress run
