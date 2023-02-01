@@ -1,4 +1,4 @@
-# [React template](https://github.com/quentinlao/reactTemplate/)
+# [Query React template](https://github.com/alanlachkar/queryReactTemplate/)
 
 React template is a template use to create a react app from scratch without CRA.
 
@@ -134,11 +134,9 @@ yarn reports:coverage
 | `src/components/**`             | Jest unit tests files in component                                                                 |
 
 ## Contributor
-
-[Quentin](https://github.com/quentinlao/)
 [Alan](https://github.com/alanlachkar)
 
 ### License
 
 [MIT](https://opensource.org/licenses/MIT)
-# queryReactTemplate
+

@@ -12,4 +12,4 @@ fixtures/dom/public/react.js
 # Coverage elements
 .nyc_output/
 .coverage/
-
+cypress/screenshots
