@@ -9,11 +9,7 @@ export const HelloWorldPage = (): JSX.Element => {
         description: '',
     });
     useEffect(() => {
-        HelloWorldService.getHelloWorld().then(
-            (response: HelloWorldInterface) => {
-                setData(response);
-            }
-        );
+        HelloWorldService.getHelloWorld().then(setData);
     }, []);
 
     return (
