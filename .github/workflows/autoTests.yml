@@ -23,5 +23,5 @@ jobs:
         cache: 'yarn'
     - run: yarn install --frozen-lockfile
     # The '--frozen-lockfile' arg installs the versions in the yarn.lock file and prevent updates to the yarn.lock file
-    - run: yarn build --if-present
+    - run: yarn build
     - run: yarn reports:coverage
