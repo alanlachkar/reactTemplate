@@ -1,14 +1,14 @@
 {
-    "name": "crt-skeleton",
-    "version": "2.1.0",
-    "description": "React template is a template use to create a react app from scratch without CRA",
+    "name": "crqt-skeleton",
+    "version": "0.0.1",
+    "description": "React query template is a template use to create a react app from scratch without CRA containing react-query library for requests",
     "main": "index.tsx",
     "keywords": [
         "react"
     ],
-    "author": "quentin",
+    "author": "alan",
     "license": "ISC",
-    "homepage": "https://github.com/quentinlao/reactTemplate#readme",
+    "homepage": "https://github.com/alanlachkar/queryReactTemplate#readme",
     "devDependencies": {
         "@babel/core": "^7.18.13",
         "@babel/plugin-proposal-class-properties": "^7.17.12",
