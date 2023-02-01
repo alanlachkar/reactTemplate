@@ -24,4 +24,7 @@ jobs:
     - run: yarn install --frozen-lockfile
     # The '--frozen-lockfile' arg installs the versions in the yarn.lock file and prevent updates to the yarn.lock file
     - run: yarn build
-    - run: yarn reports:coverage
+    - name: Run Cypress Test
+      uses: cypress-io/github-action@v4
+      with:
+        command: yarn reports:coverage
