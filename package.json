@@ -89,7 +89,7 @@
         ]
     },
     "scripts": {
-        "start": "set PORT=8082 && webpack serve --config webpack.config.js",
+        "start": "webpack serve --config webpack.config.js",
         "build": "webpack --mode production",
         "cy:open": "cypress open",
         "cy:run": "cypress run",
