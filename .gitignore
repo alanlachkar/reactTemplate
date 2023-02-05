@@ -1,4 +1,5 @@
 # gitignore react
+yarn-error.log
 node_modules/
 *~
 build/
