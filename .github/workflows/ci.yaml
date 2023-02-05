@@ -23,11 +23,11 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
     - name: Install dependencies
-    - run: yarn install
+      run: yarn install
     - name: Build the app
-    - run: yarn build
+      run: yarn build
     - name: Run Jest Tests
-    - run: yarn ut
+      run: yarn ut
     - name: Run Cypress Tests
-    - run: yarn it
+      run: yarn it
       
