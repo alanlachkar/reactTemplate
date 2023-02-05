@@ -9,7 +9,6 @@ on:
     branches: [ "dev", "main" ]
 
 jobs:
-  
  clear:
     runs-on: ubuntu-latest
     name: A job to delete old workflow runs
