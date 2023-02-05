@@ -6,7 +6,7 @@ import api from './api';
 const delay = async (value: any, duration: number): Promise<any> =>
     new Promise((resolve) => setTimeout(resolve, duration, value));
 
-const getHelloWorld = () => {
+const getHelloWorld = (): Promise<HelloWorldInterface> => {
     return api
         .get(`${API_URL}/helloworld.json`)
         .then(async (response: AxiosResponse<HelloWorldInterface>) => {
