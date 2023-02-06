@@ -37,9 +37,9 @@ jobs:
       with:
         node-version: ${{ matrix.node-version }}
         cache: 'yarn'
-    - name: Install dependencies
+    - name: Install client's dependencies
       run: yarn install
-    - name: Build the app
+    - name: Build client app
       run: yarn build
     - name: Run Jest Tests
       run: yarn ut

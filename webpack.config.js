@@ -9,7 +9,7 @@ const htmlPlugin = new HtmlWebPackPlugin({
     filename: './index.html',
 });
 
-const { PORT: port } = process.env;
+const { HTTP_PORT: port } = process.env;
 
 const devServer = {
     port,
