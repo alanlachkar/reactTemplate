@@ -1,4 +1,8 @@
 #!/bin/sh
+
+# git diff --cached = Shows only those changes of tracked files which are present in staging area
+# --name-only = Show only names of changed files
+# --diff-filter = Select only files that are Added (A), Copied (C), Deleted (D), Modified (M), Renamed (R)...
 FILES=$(git diff --cached --name-only --diff-filter=ACMR "*.js" "*.jsx" "*.ts" "*.tsx" "*.json" "*.md" "*.mdx" "*.html" "*.svg" "*.xml" "*.css" "*.scss" "*.sass" | sed 's| |\\ |g')
 [ -z "$FILES" ] && exit 0
 
