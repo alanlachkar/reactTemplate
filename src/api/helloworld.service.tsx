@@ -12,7 +12,7 @@ const getHelloWorld = (): Promise<HelloWorldInterface> => {
         .then(async (response: AxiosResponse<HelloWorldInterface>) => {
             const delayData: HelloWorldInterface = await delay(
                 response.data,
-                2000
+                1100
             );
             return Promise.resolve(delayData);
         });
