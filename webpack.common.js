@@ -1,12 +1,14 @@
 const path = require('path');
 // Webpack plugins imports
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: '[name].bundle.js', // This option determines the name of each output bundle.
     path: path.resolve(__dirname, 'dist'),
+    publicPath: '/',
     clean: true // Clean the output directory before emit.
   },
   module: {
@@ -46,7 +48,7 @@ module.exports = {
   resolve: {
     // Always necessary ?
     extensions: ['.ts', '.tsx', '.js', '.json']
-    // fallback: {
+    // , fallback: {
     // }
   },
   plugins: [
@@ -54,6 +56,9 @@ module.exports = {
       title: 'Query React App',
       template: path.resolve('./src/template.html'),
       filename: './index.html' // Removing this line will have the same behavior
+    }),
+    new CopyPlugin({
+      patterns: [{ from: 'public/api', to: 'assets/api' }]
     })
   ]
 };
