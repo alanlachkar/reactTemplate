@@ -1,10 +1,14 @@
 const path = require('path');
 // Webpack plugins imports
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
+  output: {
+    filename: '[name].bundle.js', // This option determines the name of each output bundle.
+    path: path.resolve(__dirname, 'dist'),
+    clean: true // Clean the output directory before emit.
+  },
   module: {
     rules: [
       {
@@ -22,29 +26,19 @@ module.exports = {
         ]
       },
       {
-        test: /\.css$/,
-        use: [
-          {
-            loader: MiniCssExtractPlugin.loader
-          },
-          {
-            loader: 'css-loader',
-            options: { modules: { localIdentName: '[name]_[local]_[hash:base64:5]' } }
-          }
-        ]
-      },
-      {
         test: /\.(png|gif|jpe?g|svg)$/i,
-        // TODO Check the best loader for pictures or icons or url-loader ?
-        loader: 'file-loader',
+        loader: 'url-loader',
         options: {
-          name: 'assets/images/[name].[ext]'
+          name: '[name]_[hash:base64:5].[ext]',
+          outputPath: 'assets/images',
+          limit: 5000
         }
       },
       {
         test: /\.(eot|ttf|woff|woff2)$/,
         generator: {
-          filename: 'assets/fonts/[name].[ext]'
+          filename: '[name].[ext]',
+          outputPath: 'assets/fonts/'
         }
       }
     ]
@@ -57,17 +51,9 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: path.resolve('./src/index.html'),
-      filename: './index.html'
-    }),
-    new MiniCssExtractPlugin({
-      filename: 'styles/[name].css'
+      title: 'Query React App',
+      template: path.resolve('./src/template.html'),
+      filename: './index.html' // Removing this line will have the same behavior
     })
-  ],
-
-  output: {
-    filename: '[name].bundle.js', // This option determines the name of each output bundle.
-    path: path.resolve(__dirname, 'build'),
-    clean: true // Clean the output directory before emit.
-  }
+  ]
 };

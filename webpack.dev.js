@@ -16,9 +16,30 @@ module.exports = merge(common, {
         warnings: false
       }
     },
+    open: true,
+    hot: true,
+    compress: true,
     port: process.env.HTTP_PORT,
     static: {
       directory: path.join(__dirname, 'dist')
     }
+  },
+  module: {
+    rules: [
+      {
+        test: /\.css$/,
+        exclude: [/node_modules/],
+        include: [path.resolve(__dirname, 'src')],
+        use: [
+          {
+            loader: 'style-loader' // 2. Inject styles into DOM
+          },
+          {
+            loader: 'css-loader', // 1. Turns css into commonjs
+            options: { modules: { localIdentName: '[name]_[local]_[hash:base64:5]' } }
+          }
+        ]
+      }
+    ]
   }
 });
