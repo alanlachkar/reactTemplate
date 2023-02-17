@@ -7,7 +7,7 @@ permissions:
   contents: write
   pull-requests: write
 jobs:
-  testingApp:
+  testing-client-app:
     runs-on: ubuntu-latest
     strategy:
       matrix:
@@ -27,7 +27,7 @@ jobs:
       - name: Run Cypress Tests
         run: yarn it
   dependabot:
-    needs: testingApp
+    needs: [testing-client-app]
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
     steps:
