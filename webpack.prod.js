@@ -6,7 +6,7 @@ const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 // Used it if you want to analyze your bundle and optimize it
-// If you used this line, uncomment the line in plugins
+// If you used this line, uncomment the line in plugins AND install webpack-bundle-analyzer
 // const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin;
 
 const common = require('./webpack.common.js');
