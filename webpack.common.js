@@ -45,10 +45,7 @@ module.exports = {
     ]
   },
   resolve: {
-    // Always necessary ?
     extensions: ['.ts', '.tsx', '.js', '.json']
-    // , fallback: {
-    // }
   },
   plugins: [
     new HtmlWebpackPlugin({
