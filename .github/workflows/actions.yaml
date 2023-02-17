@@ -1,23 +1,43 @@
 name: Dependabot auto-merge
 on:
-    pull_request_target:
-        branches:
-            - dev
+  pull_request_target:
+    branches:
+      - dev
 permissions:
-    contents: write
-    pull-requests: write
+  contents: write
+  pull-requests: write
 jobs:
-    dependabot:
-        runs-on: ubuntu-latest
-        if: ${{ github.actor == 'dependabot[bot]' }}
-        steps:
-            - name: Dependabot metadata
-              id: metadata
-              uses: dependabot/fetch-metadata@v1.1.1
-              with:
-                  github-token: '${{ secrets.GITHUB_TOKEN }}'
-            - name: Enable auto-merge for Dependabot PRs
-              run: gh pr merge --auto --merge "$PR_URL"
-              env:
-                  PR_URL: ${{github.event.pull_request.html_url}}
-                  GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+  testingApp:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+      - name: Install client's dependencies
+        run: yarn install
+      - name: Run Jest Tests
+        run: yarn ut
+      - name: Run Cypress Tests
+        run: yarn it
+  dependabot:
+    needs: testingApp
+    runs-on: ubuntu-latest
+    if: ${{ github.actor == 'dependabot[bot]' }}
+    steps:
+      - name: Dependabot metadata
+        id: metadata
+        uses: dependabot/fetch-metadata@v1.1.1
+        with:
+          github-token: '${{ secrets.GITHUB_TOKEN }}'
+      - name: Enable auto-merge for Dependabot PRs
+        run: gh pr merge --auto --merge "$PR_URL"
+        env:
+          PR_URL: ${{github.event.pull_request.html_url}}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
