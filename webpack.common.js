@@ -1,7 +1,6 @@
 const path = require('path');
 // Webpack plugins imports
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   entry: './src/index.tsx',
@@ -53,12 +52,10 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      title: 'Query React App',
+      title: 'Query React App template',
+      favicon: './src/assets/react.svg',
       template: path.resolve('./src/template.html'),
       filename: './index.html' // Removing this line will have the same behavior
-    }),
-    new CopyPlugin({
-      patterns: [{ from: 'public/api', to: 'assets/api' }]
     })
   ]
 };
