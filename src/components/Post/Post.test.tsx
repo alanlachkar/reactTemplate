@@ -10,7 +10,7 @@ afterEach(cleanup);
 
 let container: HTMLElement;
 
-describe('HelloWorld component suites tests', () => {
+describe('Post component suites tests', () => {
   beforeEach(() => {
     const component = render(<Post title="Hello world" body="Lorem ipsum" />);
     container = component.container;

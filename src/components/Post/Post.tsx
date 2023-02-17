@@ -11,7 +11,7 @@ interface PostProps extends Partial<PostInterface> {}
 export const Post = (props: PostProps): JSX.Element => {
   const { title, body, id } = props;
   return (
-    <div id={`${POST_ID}${id}`} className={styles.postContainer}>
+    <div id={`${POST_ID}${id}`} className={styles.container}>
       <h1>{title ? title : ''} !</h1>
       <h2>Sum {sumFunction(1, 2)}</h2>
       <div className={styles.container}>

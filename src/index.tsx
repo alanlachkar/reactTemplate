@@ -1,7 +1,7 @@
 // React imports
 import ReactDOM from 'react-dom';
 // Component imports
-import { PostPage } from './pages/PostPage';
+import { PostPage } from './pages/PostPage/PostPage';
 // Provider imports
 import QueryProvider from './providers/QueryProvider';
 
