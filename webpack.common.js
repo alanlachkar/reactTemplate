@@ -51,7 +51,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: 'Query React App template',
       favicon: './src/assets/react.svg',
-      template: path.resolve('./src/template.html'),
+      template: path.resolve('./public/template.html'),
       filename: './index.html' // Removing this line will have the same behavior
     })
   ]
