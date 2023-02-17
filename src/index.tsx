@@ -1,14 +1,17 @@
+// React imports
 import ReactDOM from 'react-dom';
-
-import { HelloWorldPage } from './pages/HelloWorldPage';
+// Component imports
+import { PostPage } from './pages/PostPage/PostPage';
+// Provider imports
 import QueryProvider from './providers/QueryProvider';
+
 const App = (): JSX.Element => {
-    return <HelloWorldPage />;
+  return <PostPage />;
 };
 
 ReactDOM.render(
-    <QueryProvider>
-        <App />
-    </QueryProvider>,
-    document.getElementById('app')
+  <QueryProvider>
+    <App />
+  </QueryProvider>,
+  document.getElementById('app')
 );
