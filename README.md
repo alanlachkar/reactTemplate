@@ -42,8 +42,7 @@ But if you run the .bat script on [Git hooks](#git-hooks) section below (recomme
 
 This plugin is used to help you to develop and add rules to stylesheet your coding style.
 
-<a name='#git-hooks'></a>
-
+<a name='git-hooks'></a>
 - Git hooks
 
 Run the .bat script in `<GIT_DIRECTORY>/.git-hooks` to instanciate the git hooks configuration on your project.
