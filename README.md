@@ -51,17 +51,6 @@ Run the .bat script in `<GIT_DIRECTORY>/.git-hooks` to instanciate the git hooks
 Configuration Windows or Linux (use powershell or bash)
 Recommendation use VSCode bash = default configuration
 
-- Reminder
-
-Usually, all comand lines take into account Windows and linux environment. But just in case an error occurs, here are a quick reminder of command lines according to it environment. To use on the 'script' section in the `package.json`.
-
-| Windows        | Linux  | Explanation               |
-| -------------- | ------ | ------------------------- |
-| copy           | cp     | Copy element(s)           |
-| mv             | move   | Move element(s)           |
-| del            | rm     | Delete element(s)         |
-| backslash \\\  | path / | Separation between folder |
-
 # Installation
 
 By default, the project port will be 8082. Change `.env` with `HTTP_PORT={your_port}`. You can also setenv `HTTP_PORT` in `package.json`.
@@ -103,6 +92,17 @@ Don't forget to run `yarn install` to install all dependencies.
 | `src/components/**/*.test.tsx`  | Jest unit tests files in component                                                                 |
 | Combined Tests                  |                                                                                                    |
 | `.coverage/combined/**`         | Coverage IT and UT                                                                                 |
+
+## Reminder
+
+Usually, all comand lines take into account Windows and linux environment. But just in case an error occurs, here are a quick reminder of command lines according to it environment. To use on the 'script' section in the `package.json`.
+
+| Windows        | Linux  | Explanation               |
+| -------------- | ------ | ------------------------- |
+| copy           | cp     | Copy element(s)           |
+| mv             | move   | Move element(s)           |
+| del            | rm     | Delete element(s)         |
+| backslash \\\  | path / | Separation between folder |
 
 ## Contributor
 
