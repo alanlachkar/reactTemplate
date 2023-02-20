@@ -7,8 +7,8 @@
     "react"
   ],
   "author": "alan",
-  "license": "ISC",
-  "homepage": "https://alanlachkar.github.io/queryReactTemplate",
+  "license": "MIT",
+  "homepage": "https://github.com/alanlachkar/queryReactTemplate",
   "devDependencies": {
     "@babel/core": "^7.20.12",
     "@babel/plugin-proposal-class-properties": "^7.17.12",
@@ -32,7 +32,7 @@
     "chai": "^4.3.7",
     "css-loader": "^6.7.3",
     "css-minimizer-webpack-plugin": "^4.2.2",
-    "cypress": "12.5.1",
+    "cypress": "12.6.0",
     "dotenv": "^16.0.3",
     "eslint": "^8.34.0",
     "eslint-plugin-react": "^7.32.2",
@@ -50,7 +50,7 @@
     "webpack-merge": "^5.8.0"
   },
   "dependencies": {
-    "@tanstack/react-query": "^4.24.6",
+    "@tanstack/react-query": "^4.24.9",
     "@types/react": "^18.0.28",
     "@types/react-dom": "^18.0.11",
     "axios": "^1.3.3",
@@ -97,7 +97,7 @@
     "build": "webpack --config webpack.prod.js",
     "gh-pages:linux": "yarn build && rm -rf docs && mv dist docs",
     "gh-pages:windows": "yarn build && rd /s /q docs && move dist docs",
-    "cy:open": "cypress open",
+    "cy:open": "cypress open --e2e",
     "cy:run": "cypress run --e2e",
     "it": "start-server-and-test start http://localhost:8082 cy:run",
     "ut": "jest --coverage",
