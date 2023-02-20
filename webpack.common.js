@@ -7,7 +7,6 @@ module.exports = {
   output: {
     filename: '[name].bundle.js', // This option determines the name of each output bundle.
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/',
     clean: true // Clean the output directory before emit.
   },
   module: {
