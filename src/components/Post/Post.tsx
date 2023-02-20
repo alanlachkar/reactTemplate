@@ -14,9 +14,7 @@ export const Post = (props: PostProps): JSX.Element => {
     <div id={`${POST_ID}${id}`} className={styles.container}>
       <h1>{title ? title : ''} !</h1>
       <h2>Sum {sumFunction(1, 2)}</h2>
-      <div className={styles.container}>
-        <p data-testid={`${BODY_ID}${id}`}>{body ? body : ''}</p>
-      </div>
+      <p data-testid={`${BODY_ID}${id}`}>{body ? body : ''}</p>
     </div>
   );
 };
