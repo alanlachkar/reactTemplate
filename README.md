@@ -43,6 +43,7 @@ But if you run the .bat script on [Git hooks](#git-hooks) section below (recomme
 This plugin is used to help you to develop and add rules to stylesheet your coding style.
 
 <a name='git-hooks'></a>
+
 - Git hooks
 
 Run the .bat script in `<GIT_DIRECTORY>/.git-hooks` to instanciate the git hooks configuration on your project.
@@ -57,7 +58,7 @@ By default, the project port will be 8082. Change `.env` with `HTTP_PORT={your_p
 Don't forget to run `yarn install` to install all dependencies.
 
 | Command lines           | Description                                                                         |
-| ----------------------- | -----------------------------------------------------------------------------       |
+| ----------------------- | ----------------------------------------------------------------------------------- |
 | `yarn start`            | Start the app in development mode and open the app in your default browser          |
 | `yarn build`            | Build project in one package for cloud provider                                     |
 | `yarn cy:open`          | Start cypress HMI to run one or multiple integration tests files (e2e)              |
