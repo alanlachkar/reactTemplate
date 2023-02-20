@@ -57,7 +57,7 @@ By default, the project port will be 8082. Change `.env` with `HTTP_PORT={your_p
 Don't forget to run `yarn install` to install all dependencies.
 
 | Command lines           | Description                                                                         |
-| ----------------------- | -----------------------------------------------------------------------------       |
+| ----------------------- | ----------------------------------------------------------------------------------- |
 | `yarn start`            | Start the app in development mode and open the app in your default browser          |
 | `yarn build`            | Build project in one package for cloud provider                                     |
 | `yarn cy:open`          | Start cypress HMI to run one or multiple integration tests files (e2e)              |
