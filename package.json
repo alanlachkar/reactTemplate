@@ -7,7 +7,7 @@
     "react"
   ],
   "author": "alan",
-  "license": "ISC",
+  "license": "MIT",
   "homepage": "https://github.com/alanlachkar/queryReactTemplate#readme",
   "devDependencies": {
     "@babel/core": "^7.20.12",
@@ -95,7 +95,7 @@
   "scripts": {
     "start": "webpack serve --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "cy:open": "cypress open",
+    "cy:open": "cypress open --e2e",
     "cy:run": "cypress run --e2e",
     "it": "start-server-and-test start http://localhost:8082 cy:run",
     "ut": "jest --coverage",
