@@ -1,8 +1,12 @@
-import ReactDOM from 'react-dom';
+// React imports
+import { createRoot } from 'react-dom/client';
+// Component imports
+import { PostPage } from './pages/PostPage/PostPage';
 
-import { HelloWorldPage } from './pages/HelloWorldPage';
 const App = (): JSX.Element => {
-    return <HelloWorldPage />;
+  return <PostPage />;
 };
 
-ReactDOM.render(<App />, document.getElementById('app'));
+const root = createRoot(document.getElementById('app') as HTMLElement);
+
+root.render(<App />);
