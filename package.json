@@ -1,10 +1,13 @@
 {
   "name": "crqt-skeleton",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "React query template is a template use to create a react app from scratch without CRA containing react-query library for requests",
   "main": "index.tsx",
   "keywords": [
-    "react"
+    "react",
+    "typescript",
+    "github-action",
+    "git-hooks"
   ],
   "author": "alan",
   "license": "MIT",

@@ -1,17 +1,12 @@
 // React imports
-import ReactDOM from 'react-dom';
+import { createRoot } from 'react-dom/client';
 // Component imports
 import { PostPage } from './pages/PostPage/PostPage';
-// Provider imports
-import QueryProvider from './providers/QueryProvider';
 
 const App = (): JSX.Element => {
   return <PostPage />;
 };
 
-ReactDOM.render(
-  <QueryProvider>
-    <App />
-  </QueryProvider>,
-  document.getElementById('app')
-);
+const root = createRoot(document.getElementById('app') as HTMLElement);
+
+root.render(<App />);
