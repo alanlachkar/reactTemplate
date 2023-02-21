@@ -15,7 +15,6 @@ module.exports = {
         exclude: [/node_modules/],
         include: [path.resolve(__dirname, 'src')],
         test: /\.(ts|tsx|js)$/,
-        // Always necessary after the migration into webpack v5 ?
         resolve: {
           extensions: ['.ts', '.tsx', '.js', '.json']
         },

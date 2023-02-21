@@ -8,7 +8,6 @@ describe('Welcoming flow', () => {
 
   it('Check charset in the document', () => {
     cy.document().should('have.property', 'charset').and('eq', 'UTF-8');
-    cy.title().should('include', 'Query React App template');
   });
 
   it("Check tab's title", () => {
