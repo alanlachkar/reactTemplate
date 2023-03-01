@@ -1,4 +1,7 @@
+// React imports
 import { ChangeEvent } from 'react';
+// Utils imports
+import { ETemplate } from 'src/utils/enums/enums';
 
 interface OptionInterface {
   value: string;
@@ -11,12 +14,20 @@ const options = [
 ];
 
 interface SelectTemplateProperties {
-  selectedValue: string | undefined;
-  onChangeSelect: (value: string) => void;
+  selectedValue?: ETemplate;
+  onChangeSelect?: (value: ETemplate) => void;
 }
 
 const SelectTemplate = (props: SelectTemplateProperties) => {
   const { selectedValue, onChangeSelect } = props;
+
+  const handleChangeSelect = (e: ChangeEvent<HTMLSelectElement>): void => {
+    if (onChangeSelect) {
+      const template: ETemplate = e.target.value as ETemplate;
+      onChangeSelect(template);
+    }
+  };
+
   return (
     <div
       style={{
@@ -31,9 +42,7 @@ const SelectTemplate = (props: SelectTemplateProperties) => {
         name="templates"
         id="template-select"
         value={selectedValue}
-        onChange={(e: ChangeEvent<HTMLSelectElement>): void =>
-          onChangeSelect(e.target.value)
-        }
+        onChange={onChangeSelect ? handleChangeSelect : undefined}
       >
         {options.map((option: OptionInterface) => {
           return (
