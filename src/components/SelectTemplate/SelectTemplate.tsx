@@ -48,7 +48,7 @@ const SelectTemplate = (props: SelectTemplateProperties) => {
           );
         })}
       </select>
-      <p>{selectedValue}</p>
+      <p data-testid="template-select-value">{selectedValue}</p>
     </div>
   );
 };
