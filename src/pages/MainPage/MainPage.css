@@ -6,8 +6,6 @@
 .topFixedBarNavigation {
   display: grid;
   grid-template: 'nav nav nav' 'main main main';
-  position: fixed;
-  width: 100%;
 }
 
 .sideBarNavigation {

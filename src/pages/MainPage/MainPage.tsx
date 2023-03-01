@@ -15,7 +15,7 @@ const MainPage = (): JSX.Element => {
     <>
       <div className={getTemplateStyle(selectNavigation)}>
         {/* Each new child page (like HomePage) will need a grid-area css style to understand if it belongs to nav or main (see Main.css) */}
-        <Outlet />
+        <Outlet context={[selectNavigation, setSelectNavigation]} />
       </div>
       <SelectTemplate
         isFixedNavigation={selectNavigation === ETemplate.TOP_FIXED_NAV}
