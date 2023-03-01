@@ -1,1 +1,29 @@
-.Post_container_jEG6k{box-shadow:0 4px 8px 0 rgba(0,0,0,.2);margin:4px 8px;transition:.3s;width:250px}.Post_container_jEG6k:hover{box-shadow:0 8px 16px 0 rgba(0,0,0,.3)}.PostPage_container_atkGt{display:flex;flex-wrap:wrap}
+.HomePage_fixedNavigation_vkgzJ {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+.HomePage_fixedMain_HDLSD {
+  margin-top: 18px;
+}
+.SelectTemplate_fixedNavigationStyle_k_8Bn {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+  position: absolute;
+  top: 40px;
+}
+.SelectTemplate_navigationStyles_HJXBB {
+  align-items: center;
+  display: flex;
+  gap: 8px;
+}
+.MainPage_topBarNavigation_MK9zf,
+.MainPage_topFixedBarNavigation_Efk9n {
+  display: grid;
+  grid-template: 'nav nav nav' 'main main main';
+}
+.MainPage_sideBarNavigation_jLoH_ {
+  display: grid;
+  grid-template: 'nav main main' 'nav main main' 'nav main main';
+}
