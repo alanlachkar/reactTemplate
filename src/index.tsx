@@ -7,17 +7,14 @@ import HomePage from './pages/HomePage/HomePage';
 import MainPage from './pages/MainPage/MainPage';
 import ErrorPage from './pages/ErrorPage/ErrorPage';
 
-const router = createBrowserRouter(
-  [
-    {
-      path: '/',
-      element: <MainPage />,
-      errorElement: <ErrorPage />,
-      children: [{ index: true, element: <HomePage /> }]
-    }
-  ],
-  { basename: '/reactTemplate' }
-);
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MainPage />,
+    errorElement: <ErrorPage />,
+    children: [{ index: true, element: <HomePage /> }]
+  }
+]);
 
 const root = createRoot(document.getElementById('app') as HTMLElement);
 
