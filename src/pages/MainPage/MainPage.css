@@ -18,13 +18,8 @@
   grid-template: 'nav main main' 'nav main main' 'nav main main';
 }
 
-.textForDemo {
-  margin: 0px;
-}
-
-.headerForDemo {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin-bottom: 16px;
+.fixedNavigation {
+  position: fixed;
+  width: 100%;
+  z-index: 1;
 }

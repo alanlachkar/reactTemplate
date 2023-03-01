@@ -19,9 +19,24 @@ const MainPage = (): JSX.Element => {
 
   return (
     <>
-      <NavigationForDemo
-        selectNavTemplate={selectNavTemplate}
-        handleSelectNavTemplate={handleSelectNavTemplate}
+      <div className={getTemplateStyle(selectNavigation)}>
+        <header
+          className={
+            selectNavigation === ETemplate.TOP_FIXED_NAV && styles.fixedNavigation
+          } // Keep this className only if you want and fixed top navigation bar
+          style={{ gridArea: 'nav', backgroundColor: 'green' }}
+        >
+          Navigation
+        </header>
+        {/* Each new child page (like HomePage) will need a grid-area css style to understand if it belongs to nav or main (see Main.css) */}
+        <Outlet context={[selectNavigation, setSelectNavigation]} />
+      </div>
+      <SelectTemplate
+        isFixedNavigation={selectNavigation === ETemplate.TOP_FIXED_NAV}
+        onChangeSelect={(newValue: string): void =>
+          setSelectNavigation(newValue as ETemplate)
+        }
+        selectedValue={selectNavigation}
       />
       <div className={getTemplateStyle(selectNavTemplate)}>
         {/* Each new child page (like HomePage) will need a grid-area css style to understand if it belongs to nav or main (see Main.css) */}

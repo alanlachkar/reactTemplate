@@ -1,9 +1,3 @@
-.fixedNavigation {
-  position: fixed;
-  width: 100%;
-  z-index: 1;
-}
-
 .fixedMain {
   /* Adapt it according to the height of the fixed top navigation bar */
   margin-top: 18px;
