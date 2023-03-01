@@ -591,13 +591,13 @@
           n = new Function('return this')(),
           t = '__coverage__',
           l = n[t] || (n[t] = {});
-        (l[e] && 'a31819dbddd2d99c5a026e8f86cea326fb99ea5d' === l[e].hash) ||
+        (l[e] && 'b6a0c35c05dc45054aed0490866667a3e2047475' === l[e].hash) ||
           (l[e] = {
             path: 'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\queryReactTemplate\\src\\index.tsx',
             statementMap: {
-              0: { start: { line: 10, column: 15 }, end: { line: 17, column: 2 } },
-              1: { start: { line: 19, column: 13 }, end: { line: 19, column: 70 } },
-              2: { start: { line: 21, column: 0 }, end: { line: 25, column: 2 } }
+              0: { start: { line: 10, column: 15 }, end: { line: 20, column: 1 } },
+              1: { start: { line: 22, column: 13 }, end: { line: 22, column: 70 } },
+              2: { start: { line: 24, column: 0 }, end: { line: 28, column: 2 } }
             },
             fnMap: {},
             branchMap: {},
@@ -605,7 +605,7 @@
             f: {},
             b: {},
             _coverageSchema: '1a1c01bbd47fc00a2c39e90264f33305004495a9',
-            hash: 'a31819dbddd2d99c5a026e8f86cea326fb99ea5d'
+            hash: 'b6a0c35c05dc45054aed0490866667a3e2047475'
           });
         var a = l[e];
         return (
@@ -618,17 +618,27 @@
       w();
       var F =
           (w().s[0]++,
-          (0, r.aj)([
-            {
-              path: '/',
-              element: (0, m.jsx)(N, {}),
-              errorElement: (0, m.jsx)(C, {}),
-              children: [{ index: !0, element: (0, m.jsx)(h, {}) }]
-            }
-          ])),
+          (0, r.aj)(
+            [
+              {
+                path: '/',
+                element: (0, m.jsx)(N, {}),
+                errorElement: (0, m.jsx)(C, {}),
+                children: [{ index: !0, element: (0, m.jsx)(h, {}) }]
+              }
+            ],
+            { basename: '/reactTemplate' }
+          )),
         O = (w().s[1]++, (0, a.s)(document.getElementById('app')));
       w().s[2]++,
-        O.render((0, m.jsx)(l.StrictMode, { children: (0, m.jsx)(c.pG, { router: F }) }));
+        O.render(
+          (0, m.jsx)(l.StrictMode, {
+            children: (0, m.jsx)(c.pG, {
+              router: F,
+              fallbackElement: (0, m.jsx)('p', { children: 'Loading...' })
+            })
+          })
+        );
     }
   },
   (e) => {
