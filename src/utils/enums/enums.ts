@@ -1,7 +1,7 @@
 enum ETemplate {
-  TOP_NAV = 'Top navigation',
-  TOP_FIXED_NAV = 'Top fixed navigation',
-  SIDE_NAV = 'Side navigation'
+  TOP_NAV = 'topNav',
+  TOP_FIXED_NAV = 'topFixedNav',
+  SIDE_NAV = 'sideFixedNav'
 }
 
 export { ETemplate };

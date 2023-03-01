@@ -15,6 +15,7 @@ const router = createBrowserRouter([
     children: [{ index: true, element: <HomePage /> }]
   }
 ]);
+
 const root = createRoot(document.getElementById('app') as HTMLElement);
 
 root.render(

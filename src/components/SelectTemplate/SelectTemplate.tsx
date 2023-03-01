@@ -1,48 +1,44 @@
 // React imports
 import { ChangeEvent } from 'react';
 // Utils imports
-import { ETemplate } from 'src/utils/enums/enums';
+import { ETemplate } from '../../utils/enums/enums';
+// Css imports
+import styles from './SelectTemplate.css';
 
 interface OptionInterface {
   value: string;
   text: string;
 }
+
 const options = [
-  { value: 'topNav', text: 'Top navigation' },
-  { value: 'topFixedNav', text: 'Top fixed navigation' },
-  { value: 'sideFixedNav', text: 'Side Fixed navigation' }
+  { value: ETemplate.TOP_NAV, text: 'Top navigation' },
+  { value: ETemplate.TOP_FIXED_NAV, text: 'Top fixed navigation' },
+  { value: ETemplate.SIDE_NAV, text: 'Side Fixed navigation' }
 ];
 
 interface SelectTemplateProperties {
-  selectedValue?: ETemplate;
-  onChangeSelect?: (value: ETemplate) => void;
+  isFixedNavigation: boolean;
+  selectedValue?: string;
+  onChangeSelect?: (value: string) => void;
 }
 
 const SelectTemplate = (props: SelectTemplateProperties) => {
-  const { selectedValue, onChangeSelect } = props;
-
-  const handleChangeSelect = (e: ChangeEvent<HTMLSelectElement>): void => {
-    if (onChangeSelect) {
-      const template: ETemplate = e.target.value as ETemplate;
-      onChangeSelect(template);
-    }
-  };
+  const { selectedValue, onChangeSelect, isFixedNavigation } = props;
 
   return (
     <div
-      style={{
-        display: 'flex',
-        alignItems: 'center',
-        gap: '8px',
-        paddingBottom: '32px'
-      }}
+      className={
+        isFixedNavigation ? styles.fixedNavigationStyle : styles.navigationStyles
+      }
     >
       <label htmlFor="template-select">Choose a template:</label>
       <select
         name="templates"
         id="template-select"
         value={selectedValue}
-        onChange={onChangeSelect ? handleChangeSelect : undefined}
+        onChange={(event: ChangeEvent<HTMLSelectElement>) =>
+          onChangeSelect ? onChangeSelect(event.target.value) : undefined
+        }
       >
         {options.map((option: OptionInterface) => {
           return (
