@@ -10,14 +10,14 @@ interface OptionInterface {
   text: string;
 }
 
-const options = [
+const options: OptionInterface[] = [
   { value: ETemplate.TOP_NAV, text: 'Top navigation' },
   { value: ETemplate.TOP_FIXED_NAV, text: 'Top fixed navigation' },
   { value: ETemplate.SIDE_NAV, text: 'Side Fixed navigation' }
 ];
 
 interface SelectTemplateProperties {
-  isFixedNavigation: boolean;
+  isFixedNavigation?: boolean;
   selectedValue?: string;
   onChangeSelect?: (value: string) => void;
 }
