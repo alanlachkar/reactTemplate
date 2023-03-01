@@ -1,17 +1,25 @@
 // React imports
-import ReactDOM from 'react-dom';
+import { StrictMode } from 'react';
+import { createRoot } from 'react-dom/client';
+import { RouterProvider, createBrowserRouter } from 'react-router-dom';
 // Component imports
-import { PostPage } from './pages/PostPage/PostPage';
-// Provider imports
-import QueryProvider from './providers/QueryProvider';
+import HomePage from './pages/HomePage/HomePage';
+import MainPage from './pages/MainPage/MainPage';
+import ErrorPage from './pages/ErrorPage/ErrorPage';
 
-const App = (): JSX.Element => {
-  return <PostPage />;
-};
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <MainPage />,
+    errorElement: <ErrorPage />,
+    children: [{ index: true, element: <HomePage /> }]
+  }
+]);
 
-ReactDOM.render(
-  <QueryProvider>
-    <App />
-  </QueryProvider>,
-  document.getElementById('app')
+const root = createRoot(document.getElementById('app') as HTMLElement);
+
+root.render(
+  <StrictMode>
+    <RouterProvider router={router} />
+  </StrictMode>
 );
