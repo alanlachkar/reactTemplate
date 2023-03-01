@@ -1,0 +1,16 @@
+.topBarNavigation {
+  display: grid;
+  grid-template: 'nav nav nav' 'main main main';
+}
+
+.topFixedBarNavigation {
+  display: grid;
+  grid-template: 'nav nav nav' 'main main main';
+  position: fixed;
+  width: 100%;
+}
+
+.sideBarNavigation {
+  display: grid;
+  grid-template: 'nav main main' 'nav main main' 'nav main main';
+}
