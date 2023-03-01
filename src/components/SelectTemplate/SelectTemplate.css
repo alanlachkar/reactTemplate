@@ -1,0 +1,13 @@
+.fixedNavigationStyle {
+  position: absolute;
+  top: 40px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.navigationStyles {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
