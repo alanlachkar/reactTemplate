@@ -1,0 +1,11 @@
+@import '../../css-vars.css';
+
+.styleForDemo {
+  color: var(--primary-text);
+  background-color: var(--background-color-primary);
+}
+
+.switchBtn {
+  color: var(--primary-text);
+  background-color: var(--primary-color);
+}

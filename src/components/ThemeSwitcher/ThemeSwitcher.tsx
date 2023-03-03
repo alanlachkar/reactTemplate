@@ -1,4 +1,7 @@
+// React imports
 import * as React from 'react';
+// Css imports
+import styles from './ThemeSwitcher.css';
 
 function ThemeToggler() {
   const [theme, setTheme] = React.useState('light');
@@ -6,28 +9,23 @@ function ThemeToggler() {
   React.useEffect(() => {
     document.body.dataset.theme = theme;
   }, [theme]);
-  return <button onClick={() => setTheme(nextTheme)}>Change to {nextTheme} mode</button>;
+  return (
+    <button className={styles.switchBtn} onClick={() => setTheme(nextTheme)}>
+      Change to {nextTheme} mode
+    </button>
+  );
 }
 
 function ThemeSection() {
   return (
     <div
+      className={styles.styleForDemo}
       style={{
-        position: 'absolute',
-        top: '70px',
         padding: '24px',
         border: 'solid 1px black'
       }}
     >
-      <div
-        style={{
-          padding: '20px',
-          color: 'var(--primary-text)',
-          backgroundColor: 'var(--background-color-primary)'
-        }}
-      >
-        This text is the primary color
-      </div>
+      <p>This text is the primary color</p>
       <ThemeToggler />
     </div>
   );
