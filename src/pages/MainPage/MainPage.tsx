@@ -40,14 +40,7 @@ const NavigationForDemo = (props: NavigationForDemoProperties): JSX.Element => {
   const { selectNavTemplate, handleSelectNavTemplate } = props;
   return (
     <>
-      <header
-        style={{
-          display: 'flex',
-          justifyContent: 'space-around',
-          alignItems: 'center',
-          marginBottom: '16px'
-        }}
-      >
+      <header className={styles.headerForDemo}>
         <div>
           <p className={styles.textForDemo}>
             This line is here only for demonstration purpose
