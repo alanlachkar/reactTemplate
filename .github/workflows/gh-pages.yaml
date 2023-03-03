@@ -1,7 +1,6 @@
 name: Update docs folder of gh-pages branch
 
 on:
-  workflow_dispatch:
   push:
     branches: ['dev']
 
