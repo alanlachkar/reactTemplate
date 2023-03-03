@@ -3,7 +3,7 @@ name: Update docs folder of gh-pages branch
 on:
   workflow_dispatch:
   push:
-    branches: ['pre-dev']
+    branches: ['dev']
 
 jobs:
   build-app-for-gh-pages:
