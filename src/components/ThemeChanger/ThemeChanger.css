@@ -1,6 +1,6 @@
 @import '../../css-vars.css';
 
-.switchBtn {
+.themeButton {
   color: var(--primary-text);
   background-color: var(--primary-color);
   border: none;

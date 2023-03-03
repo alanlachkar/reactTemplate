@@ -2,7 +2,7 @@
 import { useState } from 'react';
 import { Outlet } from 'react-router-dom';
 // Component imports
-import ThemeSection from '../../components/ThemeSwitcher/ThemeSwitcher';
+import ThemeChanger from '../../components/ThemeChanger/ThemeChanger';
 import SelectTemplate from '../../components/SelectTemplate/SelectTemplate';
 // Utils imports
 import { ETemplate } from '../../utils/enums/enums';
@@ -63,7 +63,7 @@ const NavigationForDemo = (props: NavigationForDemoProperties): JSX.Element => {
           }
           selectedValue={selectNavTemplate}
         />
-        <ThemeSection />
+        <ThemeChanger />
       </header>
     </>
   );
