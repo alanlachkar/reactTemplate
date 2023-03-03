@@ -1,4 +1,4 @@
-# [Query React template](https://github.com/alanlachkar/queryReactTemplate/)
+# [React template](https://github.com/alanlachkar/reactTemplate/)
 
 React template is a template use to create a react app from scratch without CRA.
 
@@ -9,7 +9,7 @@ React template is a template use to create a react app from scratch without CRA.
 
 ## Introduction and project configuration
 
-Query React Template is designed for minimum configuration (using react-query and react-router libraries) and **you can use all you need**:
+React Template is designed for minimum configuration (using react-router library) and **you can use all you need**:
 
 - React API 18 with Hooks [React hooks](https://fr.reactjs.org/docs/hooks-intro.html).
 - Typescript [TS](https://www.typescriptlang.org/).
