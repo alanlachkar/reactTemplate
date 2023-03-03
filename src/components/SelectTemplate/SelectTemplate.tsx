@@ -26,11 +26,7 @@ const SelectTemplate = (props: SelectTemplateProperties) => {
   const { selectedValue, onChangeSelect, isFixedNavigation } = props;
 
   return (
-    <div
-      className={
-        isFixedNavigation ? styles.fixedNavigationStyle : styles.navigationStyles
-      }
-    >
+    <div className={styles.navigationStyles}>
       <label htmlFor="template-select">Choose a template:</label>
       <select
         name="templates"
