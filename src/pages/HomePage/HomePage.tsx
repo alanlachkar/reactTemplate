@@ -1,6 +1,7 @@
 // React imports
 import { useOutletContext } from 'react-router-dom';
 //Css imports
+import classNames from 'classnames';
 import styles from './HomePage.css';
 // Utils imports
 import { ETemplate } from '../../utils/enums/enums';
@@ -12,7 +13,9 @@ const HomePage = () => {
       <header
         // /!\ Keep this className only if you want and fixed top navigation bar
         className={
-          selectNavigation === ETemplate.TOP_FIXED_NAV ? styles.fixedNavigation : {}
+          selectNavigation === ETemplate.TOP_FIXED_NAV
+            ? styles.fixedNavigation
+            : undefined
         }
         style={{
           gridArea: 'nav',
@@ -24,27 +27,14 @@ const HomePage = () => {
       </header>
       <main
         // /!\ Keep this className only if you want and fixed top navigation bar
-        className={selectNavigation === ETemplate.TOP_FIXED_NAV ? styles.fixedMain : {}}
-        style={{ gridArea: 'main', display: 'flex', height: '1200px' }}
+        className={
+          selectNavigation === ETemplate.TOP_FIXED_NAV
+            ? classNames(styles.fixedMain, styles.mainContainer)
+            : styles.mainContainer
+        }
       >
-        <div
-          style={{
-            backgroundColor: 'var(--error-color)',
-            flexGrow: 1,
-            color: 'var(--primary-text)'
-          }}
-        >
-          Main 1
-        </div>
-        <div
-          style={{
-            backgroundColor: 'var(--warning-color)',
-            flexGrow: 1,
-            color: 'var(--primary-text)'
-          }}
-        >
-          Main 2
-        </div>
+        <div className={styles.subMain1}>Main 1</div>
+        <div className={styles.subMain2}>Main 2</div>
       </main>
     </>
   );
