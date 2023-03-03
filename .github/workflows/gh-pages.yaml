@@ -13,6 +13,10 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
       - uses: actions/checkout@v3
+        with:
+          # To fetch all history for all branches and tags
+          fetch-depth: 0
+          ref: gh-pages
 
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
@@ -21,13 +25,16 @@ jobs:
           cache: 'yarn'
 
       - name: Go to gh-pages branch
-        run: git switch gh-pages
+        uses: actions/checkout@v3
+        with:
+          # To fetch all history for all branches and tags
+          fetch-depth: 0
+          ref: gh-pages
 
       - name: Update docs folder from builded app
         run: yarn gh-pages:linux
 
       - name: Update docs folder of gh-pages branch
         run: |
-          git checkout gh-pages
           git add docs || echo "No docs folder modification to add pop"
           (git commit -m "[AUTO] Update docs folder" && git push) || echo 'No modification to save'
