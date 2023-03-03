@@ -32,7 +32,7 @@ jobs:
       - name: Update docs folder from builded app
         run: yarn gh-pages:linux
 
-      - name: Update docs folder of gh-pages branch
+      - name: Push docs folder on gh-pages branch
         run: |
           git add docs || echo "No docs folder modification to add pop"
           (git commit -m "[AUTO] Update docs folder" && git push) || echo 'No modification to save'
