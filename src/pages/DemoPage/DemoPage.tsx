@@ -1,4 +1,3 @@
-// React imports
 // Component imports
 import ThemeSection from '../../components/ThemeSwitcher/ThemeSwitcher';
 
