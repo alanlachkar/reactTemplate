@@ -1,7 +1,7 @@
 // React imports
 import { useState } from 'react';
 // Css imports
-import styles from './ThemeSwitcher.css';
+import styles from './ThemeChanger.css';
 
 function ThemeChanger() {
   const [theme, setTheme] = useState<string>(initializeThemeAttribute);
@@ -13,7 +13,11 @@ function ThemeChanger() {
     });
   };
   return (
-    <button className={styles.themeButton} onClick={onChangeTheme}>
+    <button
+      data-testid="theme-button"
+      className={styles.themeButton}
+      onClick={onChangeTheme}
+    >
       Change to {getNextTheme(theme)} mode
     </button>
   );
