@@ -1,0 +1,37 @@
+name: Update docs folder of gh-pages branch
+
+on:
+  push:
+    branches: ['dev']
+
+jobs:
+  build-app-for-gh-pages:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: [18.x]
+        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
+    steps:
+      - uses: actions/checkout@v3
+      - name: Use Node.js ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+          cache: 'yarn'
+
+      - name: Go to gh-pages branch
+        uses: actions/checkout@v3
+        with:
+          # To fetch all history for all branches and tags
+          fetch-depth: 0
+          ref: gh-pages
+
+      - name: Install client's dependencies
+        run: yarn install
+      - name: Update docs folder from builded app
+        run: yarn gh-pages:linux
+
+      - name: Push docs folder on gh-pages branch
+        run: |
+          git add docs || echo "No docs folder modification to add pop"
+          (git commit -m "[AUTO] Update docs folder" && git push) || echo 'No modification to save'
