@@ -1,6 +1,7 @@
 name: Update docs folder of gh-pages branch
 
 on:
+  workflow_dispatch:
   push:
     branches: ['pre-dev']
 
@@ -26,6 +27,8 @@ jobs:
           fetch-depth: 0
           ref: gh-pages
 
+      - name: Install client's dependencies
+        run: yarn install
       - name: Update docs folder from builded app
         run: yarn gh-pages:linux
 
