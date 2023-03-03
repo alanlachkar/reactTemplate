@@ -24,7 +24,7 @@ jobs:
           workflow: '.github/workflows/ci.yaml'
           older-than-seconds: 86400
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github-token: '${{ secrets.GITHUB_TOKEN }}'
   build-and-test:
     runs-on: ubuntu-latest
     strategy:
