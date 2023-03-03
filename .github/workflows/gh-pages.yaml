@@ -23,7 +23,6 @@ jobs:
       - name: Update docs folder from builded app
         run: yarn gh-pages:linux
 
-      - uses: actions/checkout@v3
       - name: Update docs folder of gh-pages branch
         run: |
           git stash || echo "No local changes to save"
