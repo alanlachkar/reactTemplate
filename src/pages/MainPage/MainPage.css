@@ -12,3 +12,7 @@
   display: grid;
   grid-template: 'nav main main' 'nav main main' 'nav main main';
 }
+
+.textForDemo {
+  margin: 0px;
+}

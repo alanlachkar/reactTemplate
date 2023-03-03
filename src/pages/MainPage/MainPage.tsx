@@ -1,7 +1,8 @@
 // React imports
 import { useState } from 'react';
-import { Link, Outlet } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 // Component imports
+import ThemeSection from '../../components/ThemeSwitcher/ThemeSwitcher';
 import SelectTemplate from '../../components/SelectTemplate/SelectTemplate';
 // Utils imports
 import { ETemplate } from '../../utils/enums/enums';
@@ -47,10 +48,14 @@ const NavigationForDemo = (props: NavigationForDemoProperties): JSX.Element => {
           marginBottom: '16px'
         }}
       >
-        <nav style={{ display: 'flex', gap: '16px' }}>
-          <Link to="/">Home</Link>
-          <Link to="/demo">Demo</Link>
-        </nav>
+        <div>
+          <p className={styles.textForDemo}>
+            This line is here only for demonstration purpose
+          </p>
+          <p className={styles.textForDemo}>
+            Don't hesitate to scroll down to check the layout's behavior
+          </p>
+        </div>
         <SelectTemplate
           isFixedNavigation={selectNavTemplate === ETemplate.TOP_FIXED_NAV}
           onChangeSelect={(newValue: string): void =>
@@ -58,6 +63,7 @@ const NavigationForDemo = (props: NavigationForDemoProperties): JSX.Element => {
           }
           selectedValue={selectNavTemplate}
         />
+        <ThemeSection />
       </header>
     </>
   );

@@ -31,12 +31,4 @@ const getThemeAttribute = (): string => {
   return returnedValue;
 };
 
-function ThemeSection() {
-  return (
-    <div className={styles.styleForDemo}>
-      <p>This text is the primary color</p>
-      <ThemeToggler />
-    </div>
-  );
-}
-export default ThemeSection;
+export default ThemeToggler;

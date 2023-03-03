@@ -1,13 +1,7 @@
 @import '../../css-vars.css';
 
-.styleForDemo {
-  color: var(--primary-text);
-  background-color: var(--background-color-primary);
-  padding: 24px;
-  border: solid 1px black;
-}
-
 .switchBtn {
   color: var(--primary-text);
   background-color: var(--primary-color);
+  border: none;
 }
