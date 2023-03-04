@@ -2,7 +2,7 @@ name: Update docs folder of gh-pages branch
 
 on:
   push:
-    branches: ['dev']
+    branches: ['pre-dev']
 
 jobs:
   build-app-for-gh-pages:
