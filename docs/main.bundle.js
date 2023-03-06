@@ -6,11 +6,15 @@
       var t = l(294),
         a = l(745),
         c = l(655),
-        o = l(250),
-        r = l(184),
-        i = l.n(r);
-      const s = 'HomePage_mainContainer_aumiY';
-      function u() {
+        r = l(250),
+        o = l(184),
+        i = l.n(o);
+      const s = 'HomePage_fixedNavigation_vkgzJ',
+        u = 'HomePage_fixedMain_HDLSD',
+        m = 'HomePage_mainContainer_aumiY',
+        d = 'HomePage_subMain1_gLhbg',
+        f = 'HomePage_subMain2_R9HvI';
+      function h() {
         var n =
             'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\utils\\enums\\enums.ts',
           e = new Function('return this')(),
@@ -30,21 +34,21 @@
           });
         var a = t[n];
         return (
-          (u = function () {
+          (h = function () {
             return a;
           }),
           a
         );
       }
-      var m;
-      u(),
+      var p;
+      h(),
         (function (n) {
           (n.TOP_NAV = 'topNav'),
             (n.TOP_FIXED_NAV = 'topFixedNav'),
             (n.SIDE_NAV = 'sideFixedNav');
-        })(m || (m = {}));
-      var d = l(893);
-      function f() {
+        })(p || (p = {}));
+      var b = l(893);
+      function v() {
         var n =
             'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\pages\\HomePage\\HomePage.tsx',
           e = new Function('return this')(),
@@ -94,98 +98,87 @@
           });
         var a = t[n];
         return (
-          (f = function () {
+          (v = function () {
             return a;
           }),
           a
         );
       }
-      function h(n, e) {
+      function _(n, e) {
+        return (
+          (function (n) {
+            if (Array.isArray(n)) return n;
+          })(n) ||
+          (function (n, e) {
+            var l =
+              null == n
+                ? null
+                : ('undefined' != typeof Symbol && n[Symbol.iterator]) || n['@@iterator'];
+            if (null != l) {
+              var t,
+                a,
+                c,
+                r,
+                o = [],
+                i = !0,
+                s = !1;
+              try {
+                if (((c = (l = l.call(n)).next), 0 === e)) {
+                  if (Object(l) !== l) return;
+                  i = !1;
+                } else
+                  for (
+                    ;
+                    !(i = (t = c.call(l)).done) && (o.push(t.value), o.length !== e);
+                    i = !0
+                  );
+              } catch (n) {
+                (s = !0), (a = n);
+              } finally {
+                try {
+                  if (!i && null != l.return && ((r = l.return()), Object(r) !== r))
+                    return;
+                } finally {
+                  if (s) throw a;
+                }
+              }
+              return o;
+            }
+          })(n, e) ||
+          (function (n, e) {
+            if (!n) return;
+            if ('string' == typeof n) return g(n, e);
+            var l = Object.prototype.toString.call(n).slice(8, -1);
+            'Object' === l && n.constructor && (l = n.constructor.name);
+            if ('Map' === l || 'Set' === l) return Array.from(n);
+            if ('Arguments' === l || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l))
+              return g(n, e);
+          })(n, e) ||
+          (function () {
+            throw new TypeError(
+              'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
+            );
+          })()
+        );
+      }
+      function g(n, e) {
         (null == e || e > n.length) && (e = n.length);
         for (var l = 0, t = new Array(e); l < e; l++) t[l] = n[l];
         return t;
       }
-      f(), f().s[0]++;
-      const p = function () {
-          f().f[0]++;
-          var n,
-            e,
-            l =
-              (f().s[1]++,
-              (n = (0, o.bx)()),
-              (e = 2),
-              (function (n) {
-                if (Array.isArray(n)) return n;
-              })(n) ||
-                (function (n, e) {
-                  var l =
-                    null == n
-                      ? null
-                      : ('undefined' != typeof Symbol && n[Symbol.iterator]) ||
-                        n['@@iterator'];
-                  if (null != l) {
-                    var t,
-                      a,
-                      c,
-                      o,
-                      r = [],
-                      i = !0,
-                      s = !1;
-                    try {
-                      if (((c = (l = l.call(n)).next), 0 === e)) {
-                        if (Object(l) !== l) return;
-                        i = !1;
-                      } else
-                        for (
-                          ;
-                          !(i = (t = c.call(l)).done) &&
-                          (r.push(t.value), r.length !== e);
-                          i = !0
-                        );
-                    } catch (n) {
-                      (s = !0), (a = n);
-                    } finally {
-                      try {
-                        if (!i && null != l.return && ((o = l.return()), Object(o) !== o))
-                          return;
-                      } finally {
-                        if (s) throw a;
-                      }
-                    }
-                    return r;
-                  }
-                })(n, e) ||
-                (function (n, e) {
-                  if (n) {
-                    if ('string' == typeof n) return h(n, e);
-                    var l = Object.prototype.toString.call(n).slice(8, -1);
-                    return (
-                      'Object' === l && n.constructor && (l = n.constructor.name),
-                      'Map' === l || 'Set' === l
-                        ? Array.from(n)
-                        : 'Arguments' === l ||
-                          /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l)
-                        ? h(n, e)
-                        : void 0
-                    );
-                  }
-                })(n, e) ||
-                (function () {
-                  throw new TypeError(
-                    'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
-                  );
-                })()),
-            t = l[0];
+      v(), v().s[0]++;
+      const y = function () {
+          v().f[0]++;
+          var n = _((v().s[1]++, (0, r.bx)()), 2),
+            e = n[0];
+          n[1];
           return (
-            l[1],
-            f().s[2]++,
-            (0, d.jsxs)(d.Fragment, {
+            v().s[2]++,
+            (0, b.jsxs)(b.Fragment, {
               children: [
-                (0, d.jsx)('header', {
+                (0, b.jsx)('header', {
                   className:
-                    t === m.TOP_FIXED_NAV
-                      ? (f().b[0][0]++, 'HomePage_fixedNavigation_vkgzJ')
-                      : void f().b[0][1]++,
+                    e === p.TOP_FIXED_NAV ? (v().b[0][0]++, s) : void v().b[0][1]++,
                   style: {
                     gridArea: 'nav',
                     backgroundColor: 'var(--success-color)',
@@ -193,28 +186,22 @@
                   },
                   children: 'Navigation'
                 }),
-                (0, d.jsxs)('main', {
+                (0, b.jsxs)('main', {
                   className:
-                    t === m.TOP_FIXED_NAV
-                      ? (f().b[1][0]++, i()('HomePage_fixedMain_HDLSD', s))
-                      : (f().b[1][1]++, s),
+                    e === p.TOP_FIXED_NAV
+                      ? (v().b[1][0]++, i()(u, m))
+                      : (v().b[1][1]++, m),
                   children: [
-                    (0, d.jsx)('div', {
-                      className: 'HomePage_subMain1_gLhbg',
-                      children: 'Main 1'
-                    }),
-                    (0, d.jsx)('div', {
-                      className: 'HomePage_subMain2_R9HvI',
-                      children: 'Main 2'
-                    })
+                    (0, b.jsx)('div', { className: d, children: 'Main 1' }),
+                    (0, b.jsx)('div', { className: f, children: 'Main 2' })
                   ]
                 })
               ]
             })
           );
         },
-        b = 'ThemeChanger_themeButton_j5pWg';
-      function v() {
+        x = { themeButton: 'ThemeChanger_themeButton_j5pWg' };
+      function j() {
         var n =
             'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\components\\ThemeChanger\\ThemeChanger.tsx',
           e = new Function('return this')(),
@@ -333,142 +320,138 @@
           });
         var a = t[n];
         return (
-          (v = function () {
+          (j = function () {
             return a;
           }),
           a
         );
       }
-      function _(n, e) {
+      function A(n, e) {
+        return (
+          (function (n) {
+            if (Array.isArray(n)) return n;
+          })(n) ||
+          (function (n, e) {
+            var l =
+              null == n
+                ? null
+                : ('undefined' != typeof Symbol && n[Symbol.iterator]) || n['@@iterator'];
+            if (null != l) {
+              var t,
+                a,
+                c,
+                r,
+                o = [],
+                i = !0,
+                s = !1;
+              try {
+                if (((c = (l = l.call(n)).next), 0 === e)) {
+                  if (Object(l) !== l) return;
+                  i = !1;
+                } else
+                  for (
+                    ;
+                    !(i = (t = c.call(l)).done) && (o.push(t.value), o.length !== e);
+                    i = !0
+                  );
+              } catch (n) {
+                (s = !0), (a = n);
+              } finally {
+                try {
+                  if (!i && null != l.return && ((r = l.return()), Object(r) !== r))
+                    return;
+                } finally {
+                  if (s) throw a;
+                }
+              }
+              return o;
+            }
+          })(n, e) ||
+          (function (n, e) {
+            if (!n) return;
+            if ('string' == typeof n) return T(n, e);
+            var l = Object.prototype.toString.call(n).slice(8, -1);
+            'Object' === l && n.constructor && (l = n.constructor.name);
+            if ('Map' === l || 'Set' === l) return Array.from(n);
+            if ('Arguments' === l || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l))
+              return T(n, e);
+          })(n, e) ||
+          (function () {
+            throw new TypeError(
+              'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
+            );
+          })()
+        );
+      }
+      function T(n, e) {
         (null == e || e > n.length) && (e = n.length);
         for (var l = 0, t = new Array(e); l < e; l++) t[l] = n[l];
         return t;
       }
-      v(), v().s[7]++;
-      var g = function () {
+      j(), j().s[7]++;
+      var D = function () {
         var n;
-        v().f[3]++;
-        var e = (v().s[8]++, document.body.getAttribute('data-theme'));
+        j().f[3]++;
+        var e = (j().s[8]++, document.body.getAttribute('data-theme'));
         return (
-          v().s[9]++,
+          j().s[9]++,
           e
-            ? (v().b[0][0]++, v().s[10]++, (n = e))
-            : (v().b[0][1]++,
-              v().s[11]++,
+            ? (j().b[0][0]++, j().s[10]++, (n = e))
+            : (j().b[0][1]++,
+              j().s[11]++,
               (document.body.dataset.theme = 'light'),
-              v().s[12]++,
+              j().s[12]++,
               (n = 'light')),
-          v().s[13]++,
+          j().s[13]++,
           n
         );
       };
-      v().s[14]++;
-      var y = function (n) {
+      j().s[14]++;
+      var S = function (n) {
         var e;
-        switch ((v().f[4]++, v().s[15]++, n)) {
+        switch ((j().f[4]++, j().s[15]++, n)) {
           case 'light':
-            v().b[1][0]++, v().s[16]++, (e = 'dark'), v().s[17]++;
+            j().b[1][0]++, j().s[16]++, (e = 'dark'), j().s[17]++;
             break;
           case 'dark':
-            v().b[1][1]++, v().s[18]++, (e = 'light'), v().s[19]++;
+            j().b[1][1]++, j().s[18]++, (e = 'light'), j().s[19]++;
             break;
           default:
-            v().b[1][2]++, v().s[20]++, (e = 'light'), v().s[21]++;
+            j().b[1][2]++, j().s[20]++, (e = 'light'), j().s[21]++;
         }
-        return v().s[22]++, e;
+        return j().s[22]++, e;
       };
-      const x = function () {
-        v().f[0]++;
-        var n,
-          e,
-          l =
-            (v().s[0]++,
-            (n = (0, t.useState)(g)),
-            (e = 2),
-            (function (n) {
-              if (Array.isArray(n)) return n;
-            })(n) ||
-              (function (n, e) {
-                var l =
-                  null == n
-                    ? null
-                    : ('undefined' != typeof Symbol && n[Symbol.iterator]) ||
-                      n['@@iterator'];
-                if (null != l) {
-                  var t,
-                    a,
-                    c,
-                    o,
-                    r = [],
-                    i = !0,
-                    s = !1;
-                  try {
-                    if (((c = (l = l.call(n)).next), 0 === e)) {
-                      if (Object(l) !== l) return;
-                      i = !1;
-                    } else
-                      for (
-                        ;
-                        !(i = (t = c.call(l)).done) && (r.push(t.value), r.length !== e);
-                        i = !0
-                      );
-                  } catch (n) {
-                    (s = !0), (a = n);
-                  } finally {
-                    try {
-                      if (!i && null != l.return && ((o = l.return()), Object(o) !== o))
-                        return;
-                    } finally {
-                      if (s) throw a;
-                    }
-                  }
-                  return r;
-                }
-              })(n, e) ||
-              (function (n, e) {
-                if (n) {
-                  if ('string' == typeof n) return _(n, e);
-                  var l = Object.prototype.toString.call(n).slice(8, -1);
-                  return (
-                    'Object' === l && n.constructor && (l = n.constructor.name),
-                    'Map' === l || 'Set' === l
-                      ? Array.from(n)
-                      : 'Arguments' === l ||
-                        /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l)
-                      ? _(n, e)
-                      : void 0
-                  );
-                }
-              })(n, e) ||
-              (function () {
-                throw new TypeError(
-                  'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
-                );
-              })()),
-          a = l[0],
-          c = l[1];
-        return (
-          v().s[1]++,
-          v().s[6]++,
-          (0, d.jsxs)('button', {
-            'data-testid': 'theme-button',
-            className: b,
-            onClick: function () {
-              v().f[1]++,
-                v().s[2]++,
-                c(function (n) {
-                  v().f[2]++;
-                  var e = (v().s[3]++, y(n));
-                  return (
-                    v().s[4]++, document.body.setAttribute('data-theme', e), v().s[5]++, e
-                  );
-                });
-            },
-            children: ['Change to ', y(a), ' mode']
-          })
-        );
-      };
-      function j() {
+      const M = function () {
+          j().f[0]++;
+          var n = A((j().s[0]++, (0, t.useState)(D)), 2),
+            e = n[0],
+            l = n[1];
+          return (
+            j().s[1]++,
+            j().s[6]++,
+            (0, b.jsxs)('button', {
+              'data-testid': 'theme-button',
+              className: x.themeButton,
+              onClick: function () {
+                j().f[1]++,
+                  j().s[2]++,
+                  l(function (n) {
+                    j().f[2]++;
+                    var e = (j().s[3]++, S(n));
+                    return (
+                      j().s[4]++,
+                      document.body.setAttribute('data-theme', e),
+                      j().s[5]++,
+                      e
+                    );
+                  });
+              },
+              children: ['Change to ', S(e), ' mode']
+            })
+          );
+        },
+        N = 'SelectTemplate_navigationStyles_HJXBB';
+      function C() {
         var n =
             'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\components\\SelectTemplate\\SelectTemplate.tsx',
           e = new Function('return this')(),
@@ -524,62 +507,66 @@
           });
         var a = t[n];
         return (
-          (j = function () {
+          (C = function () {
             return a;
           }),
           a
         );
       }
-      j();
-      var A =
-        (j().s[0]++,
+      C();
+      var P =
+        (C().s[0]++,
         [
-          { value: m.TOP_NAV, text: 'Top navigation' },
-          { value: m.TOP_FIXED_NAV, text: 'Top fixed navigation' },
-          { value: m.SIDE_NAV, text: 'Side Fixed navigation' }
+          { value: p.TOP_NAV, text: 'Top navigation' },
+          { value: p.TOP_FIXED_NAV, text: 'Top fixed navigation' },
+          { value: p.SIDE_NAV, text: 'Side Fixed navigation' }
         ]);
-      j().s[1]++;
-      const T = function (n) {
-          j().f[0]++;
-          var e = (j().s[2]++, n),
+      C().s[1]++;
+      const w = function (n) {
+          C().f[0]++;
+          var e = (C().s[2]++, n),
             l = e.selectedValue,
             t = e.onChangeSelect;
+          e.isFixedNavigation;
           return (
-            e.isFixedNavigation,
-            j().s[3]++,
-            (0, d.jsxs)('div', {
-              className: 'SelectTemplate_navigationStyles_HJXBB',
+            C().s[3]++,
+            (0, b.jsxs)('div', {
+              className: N,
               children: [
-                (0, d.jsx)('label', {
+                (0, b.jsx)('label', {
                   htmlFor: 'template-select',
                   children: 'Choose a template:'
                 }),
-                (0, d.jsx)('select', {
+                (0, b.jsx)('select', {
                   name: 'templates',
                   id: 'template-select',
                   value: l,
                   onChange: function (n) {
                     return (
-                      j().f[1]++,
-                      j().s[4]++,
-                      t ? (j().b[0][0]++, t(n.target.value)) : void j().b[0][1]++
+                      C().f[1]++,
+                      C().s[4]++,
+                      t ? (C().b[0][0]++, t(n.target.value)) : void C().b[0][1]++
                     );
                   },
-                  children: A.map(function (n) {
+                  children: P.map(function (n) {
                     return (
-                      j().f[2]++,
-                      j().s[5]++,
-                      (0, d.jsx)('option', { value: n.value, children: n.text }, n.value)
+                      C().f[2]++,
+                      C().s[5]++,
+                      (0, b.jsx)('option', { value: n.value, children: n.text }, n.value)
                     );
                   })
                 }),
-                (0, d.jsx)('p', { 'data-testid': 'template-select-value', children: l })
+                (0, b.jsx)('p', { 'data-testid': 'template-select-value', children: l })
               ]
             })
           );
         },
-        D = 'MainPage_textForDemo_UgOAb';
-      function S() {
+        O = 'MainPage_topBarNavigation_MK9zf',
+        F = 'MainPage_topFixedBarNavigation_Efk9n',
+        k = 'MainPage_sideBarNavigation_jLoH_',
+        E = 'MainPage_textForDemo_UgOAb',
+        I = 'MainPage_headerForDemo_Y6yDG';
+      function U() {
         var n =
             'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\pages\\MainPage\\MainPage.tsx',
           e = new Function('return this')(),
@@ -684,170 +671,154 @@
           });
         var a = t[n];
         return (
-          (S = function () {
+          (U = function () {
             return a;
           }),
           a
         );
       }
-      function M(n, e) {
+      function V(n, e) {
+        return (
+          (function (n) {
+            if (Array.isArray(n)) return n;
+          })(n) ||
+          (function (n, e) {
+            var l =
+              null == n
+                ? null
+                : ('undefined' != typeof Symbol && n[Symbol.iterator]) || n['@@iterator'];
+            if (null != l) {
+              var t,
+                a,
+                c,
+                r,
+                o = [],
+                i = !0,
+                s = !1;
+              try {
+                if (((c = (l = l.call(n)).next), 0 === e)) {
+                  if (Object(l) !== l) return;
+                  i = !1;
+                } else
+                  for (
+                    ;
+                    !(i = (t = c.call(l)).done) && (o.push(t.value), o.length !== e);
+                    i = !0
+                  );
+              } catch (n) {
+                (s = !0), (a = n);
+              } finally {
+                try {
+                  if (!i && null != l.return && ((r = l.return()), Object(r) !== r))
+                    return;
+                } finally {
+                  if (s) throw a;
+                }
+              }
+              return o;
+            }
+          })(n, e) ||
+          (function (n, e) {
+            if (!n) return;
+            if ('string' == typeof n) return H(n, e);
+            var l = Object.prototype.toString.call(n).slice(8, -1);
+            'Object' === l && n.constructor && (l = n.constructor.name);
+            if ('Map' === l || 'Set' === l) return Array.from(n);
+            if ('Arguments' === l || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l))
+              return H(n, e);
+          })(n, e) ||
+          (function () {
+            throw new TypeError(
+              'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
+            );
+          })()
+        );
+      }
+      function H(n, e) {
         (null == e || e > n.length) && (e = n.length);
         for (var l = 0, t = new Array(e); l < e; l++) t[l] = n[l];
         return t;
       }
-      S(), S().s[0]++, S().s[5]++;
-      var N = function (n) {
-        S().f[2]++;
-        var e = (S().s[6]++, n),
+      U(), U().s[0]++;
+      U().s[5]++;
+      var B = function (n) {
+        U().f[2]++;
+        var e = (U().s[6]++, n),
           l = e.selectNavTemplate,
           t = e.handleSelectNavTemplate;
         return (
-          S().s[7]++,
-          (0, d.jsx)(d.Fragment, {
-            children: (0, d.jsxs)('header', {
-              className: 'MainPage_headerForDemo_Y6yDG',
+          U().s[7]++,
+          (0, b.jsx)(b.Fragment, {
+            children: (0, b.jsxs)('header', {
+              className: I,
               children: [
-                (0, d.jsxs)('div', {
+                (0, b.jsxs)('div', {
                   children: [
-                    (0, d.jsx)('p', {
-                      className: D,
+                    (0, b.jsx)('p', {
+                      className: E,
                       children: 'This line is here only for demonstration purpose'
                     }),
-                    (0, d.jsx)('p', {
-                      className: D,
+                    (0, b.jsx)('p', {
+                      className: E,
                       children:
                         "Don't hesitate to scroll down to check the layout's behavior"
                     })
                   ]
                 }),
-                (0, d.jsx)(T, {
-                  isFixedNavigation: l === m.TOP_FIXED_NAV,
+                (0, b.jsx)(w, {
+                  isFixedNavigation: l === p.TOP_FIXED_NAV,
                   onChangeSelect: function (n) {
-                    return S().f[3]++, S().s[8]++, t(n);
+                    return U().f[3]++, U().s[8]++, t(n);
                   },
                   selectedValue: l
                 }),
-                (0, d.jsx)(x, {})
+                (0, b.jsx)(M, {})
               ]
             })
           })
         );
       };
-      S().s[9]++;
-      var C = function (n) {
+      U().s[9]++;
+      var X = function (n) {
         var e;
-        switch ((S().f[4]++, S().s[10]++, n)) {
-          case m.TOP_NAV:
-            S().b[0][0]++,
-              S().s[11]++,
-              (e = 'MainPage_topBarNavigation_MK9zf'),
-              S().s[12]++;
+        switch ((U().f[4]++, U().s[10]++, n)) {
+          case p.TOP_NAV:
+            U().b[0][0]++, U().s[11]++, (e = O), U().s[12]++;
             break;
-          case m.TOP_FIXED_NAV:
-            S().b[0][1]++,
-              S().s[13]++,
-              (e = 'MainPage_topFixedBarNavigation_Efk9n'),
-              S().s[14]++;
+          case p.TOP_FIXED_NAV:
+            U().b[0][1]++, U().s[13]++, (e = F), U().s[14]++;
             break;
-          case m.SIDE_NAV:
-            S().b[0][2]++,
-              S().s[15]++,
-              (e = 'MainPage_sideBarNavigation_jLoH_'),
-              S().s[16]++;
+          case p.SIDE_NAV:
+            U().b[0][2]++, U().s[15]++, (e = k), U().s[16]++;
             break;
           default:
-            S().b[0][3]++, S().s[17]++, (e = void 0), S().s[18]++;
+            U().b[0][3]++, U().s[17]++, (e = void 0), U().s[18]++;
         }
-        return S().s[19]++, e;
+        return U().s[19]++, e;
       };
-      const P = function () {
-        S().f[0]++;
-        var n,
-          e,
-          l =
-            (S().s[1]++,
-            (n = (0, t.useState)(m.TOP_NAV)),
-            (e = 2),
-            (function (n) {
-              if (Array.isArray(n)) return n;
-            })(n) ||
-              (function (n, e) {
-                var l =
-                  null == n
-                    ? null
-                    : ('undefined' != typeof Symbol && n[Symbol.iterator]) ||
-                      n['@@iterator'];
-                if (null != l) {
-                  var t,
-                    a,
-                    c,
-                    o,
-                    r = [],
-                    i = !0,
-                    s = !1;
-                  try {
-                    if (((c = (l = l.call(n)).next), 0 === e)) {
-                      if (Object(l) !== l) return;
-                      i = !1;
-                    } else
-                      for (
-                        ;
-                        !(i = (t = c.call(l)).done) && (r.push(t.value), r.length !== e);
-                        i = !0
-                      );
-                  } catch (n) {
-                    (s = !0), (a = n);
-                  } finally {
-                    try {
-                      if (!i && null != l.return && ((o = l.return()), Object(o) !== o))
-                        return;
-                    } finally {
-                      if (s) throw a;
-                    }
-                  }
-                  return r;
-                }
-              })(n, e) ||
-              (function (n, e) {
-                if (n) {
-                  if ('string' == typeof n) return M(n, e);
-                  var l = Object.prototype.toString.call(n).slice(8, -1);
-                  return (
-                    'Object' === l && n.constructor && (l = n.constructor.name),
-                    'Map' === l || 'Set' === l
-                      ? Array.from(n)
-                      : 'Arguments' === l ||
-                        /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l)
-                      ? M(n, e)
-                      : void 0
-                  );
-                }
-              })(n, e) ||
-              (function () {
-                throw new TypeError(
-                  'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
-                );
-              })()),
-          a = l[0],
-          c = l[1];
-        S().s[2]++;
-        var r = function (n) {
-          S().f[1]++, S().s[3]++, c(n);
+      const L = function () {
+        U().f[0]++;
+        var n = V((U().s[1]++, (0, t.useState)(p.TOP_NAV)), 2),
+          e = n[0],
+          l = n[1];
+        U().s[2]++;
+        var a = function (n) {
+          U().f[1]++, U().s[3]++, l(n);
         };
         return (
-          S().s[4]++,
-          (0, d.jsxs)(d.Fragment, {
+          U().s[4]++,
+          (0, b.jsxs)(b.Fragment, {
             children: [
-              (0, d.jsx)(N, { selectNavTemplate: a, handleSelectNavTemplate: r }),
-              (0, d.jsx)('div', {
-                className: C(a),
-                children: (0, d.jsx)(o.j3, { context: [a, r] })
+              (0, b.jsx)(B, { selectNavTemplate: e, handleSelectNavTemplate: a }),
+              (0, b.jsx)('div', {
+                className: X(e),
+                children: (0, b.jsx)(r.j3, { context: [e, a] })
               })
             ]
           })
         );
       };
-      function w() {
+      function G() {
         var n =
             'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\pages\\ErrorPage\\ErrorPage.tsx',
           e = new Function('return this')(),
@@ -888,39 +859,39 @@
           });
         var a = t[n];
         return (
-          (w = function () {
+          (G = function () {
             return a;
           }),
           a
         );
       }
-      w(), w().s[0]++;
-      const O = function () {
-        w().f[0]++;
-        var n = (w().s[1]++, (0, o.lk)());
+      G(), G().s[0]++;
+      const $ = function () {
+        G().f[0]++;
+        var n = (G().s[1]++, (0, r.lk)());
         return (
-          w().s[2]++,
-          (0, d.jsxs)('div', {
+          G().s[2]++,
+          (0, b.jsxs)('div', {
             id: 'error-page',
             children: [
-              (0, d.jsx)('h1', { children: 'Oops!' }),
-              (0, d.jsx)('p', { children: 'Sorry, an unexpected error has occurred.' }),
-              (0, d.jsx)('p', {
-                children: (0, d.jsx)('i', {
+              (0, b.jsx)('h1', { children: 'Oops!' }),
+              (0, b.jsx)('p', { children: 'Sorry, an unexpected error has occurred.' }),
+              (0, b.jsx)('p', {
+                children: (0, b.jsx)('i', {
                   children:
-                    (w().b[0][0]++,
+                    (G().b[0][0]++,
                     (null == n ? void 0 : n.statusText) ||
-                      (w().b[0][1]++, null == n ? void 0 : n.message))
+                      (G().b[0][1]++, null == n ? void 0 : n.message))
                 })
               }),
-              (0, d.jsx)('p', {
-                children: (0, d.jsx)(c.rU, { to: '/', children: 'Go to the home page' })
+              (0, b.jsx)('p', {
+                children: (0, b.jsx)(c.rU, { to: '/', children: 'Go to the home page' })
               })
             ]
           })
         );
       };
-      function F() {
+      function q() {
         var n =
             'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\index.tsx',
           e = new Function('return this')(),
@@ -944,36 +915,40 @@
           });
         var a = t[n];
         return (
-          (F = function () {
+          (q = function () {
             return a;
           }),
           a
         );
       }
-      F();
-      var k =
-          (F().s[0]++,
+      q();
+      var z =
+          (q().s[0]++,
           (0, c.aj)([
             {
               path: '/',
-              element: (0, d.jsx)(P, {}),
-              errorElement: (0, d.jsx)(O, {}),
-              children: [{ index: !0, element: (0, d.jsx)(p, {}) }]
+              element: (0, b.jsx)(L, {}),
+              errorElement: (0, b.jsx)($, {}),
+              children: [{ index: !0, element: (0, b.jsx)(y, {}) }]
             }
           ])),
-        E = (F().s[1]++, (0, a.s)(document.getElementById('app')));
-      F().s[2]++,
-        E.render(
-          (0, d.jsx)(t.StrictMode, {
-            children: (0, d.jsx)(o.pG, {
-              router: k,
-              fallbackElement: (0, d.jsx)('p', { children: 'Loading...' })
+        J = (q().s[1]++, (0, a.s)(document.getElementById('app')));
+      q().s[2]++,
+        J.render(
+          (0, b.jsx)(t.StrictMode, {
+            children: (0, b.jsx)(r.pG, {
+              router: z,
+              fallbackElement: (0, b.jsx)('p', { children: 'Loading...' })
             })
           })
         );
     }
   },
   (n) => {
-    n.O(0, [216], () => (575, n((n.s = 575)))), n.O();
+    n.O(0, [216], () => {
+      return (e = 575), n((n.s = e));
+      var e;
+    });
+    n.O();
   }
 ]);
