@@ -2,26 +2,27 @@
 (self.webpackChunkcrqt_skeleton = self.webpackChunkcrqt_skeleton || []).push([
   [179],
   {
-    575: (e, n, t) => {
-      var l = t(294),
-        a = t(745),
-        r = t(655),
-        c = t(250),
-        o = t(184),
-        i = t.n(o);
-      const u = 'HomePage_fixedNavigation_vkgzJ',
-        s = 'HomePage_fixedMain_HDLSD',
+    575: (n, e, l) => {
+      var t = l(294),
+        a = l(745),
+        c = l(655),
+        r = l(250),
+        o = l(184),
+        i = l.n(o);
+      const s = 'HomePage_fixedNavigation_vkgzJ',
+        u = 'HomePage_fixedMain_HDLSD',
         m = 'HomePage_mainContainer_aumiY',
         d = 'HomePage_subMain1_gLhbg',
         f = 'HomePage_subMain2_R9HvI';
       function h() {
-        var e = '/home/runner/work/reactTemplate/reactTemplate/src/utils/enums/enums.ts',
-          n = new Function('return this')(),
-          t = '__coverage__',
-          l = n[t] || (n[t] = {});
-        (l[e] && 'fcdbc5d3b71cc554f32f97b31ca5f35ae6ad34de' === l[e].hash) ||
-          (l[e] = {
-            path: '/home/runner/work/reactTemplate/reactTemplate/src/utils/enums/enums.ts',
+        var n =
+            'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\utils\\enums\\enums.ts',
+          e = new Function('return this')(),
+          l = '__coverage__',
+          t = e[l] || (e[l] = {});
+        (t[n] && '136e7ebf61d466d8d40d692911d2640f17c620ab' === t[n].hash) ||
+          (t[n] = {
+            path: 'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\utils\\enums\\enums.ts',
             statementMap: {},
             fnMap: {},
             branchMap: {},
@@ -29,9 +30,9 @@
             f: {},
             b: {},
             _coverageSchema: '1a1c01bbd47fc00a2c39e90264f33305004495a9',
-            hash: 'fcdbc5d3b71cc554f32f97b31ca5f35ae6ad34de'
+            hash: '136e7ebf61d466d8d40d692911d2640f17c620ab'
           });
-        var a = l[e];
+        var a = t[n];
         return (
           (h = function () {
             return a;
@@ -41,21 +42,21 @@
       }
       var p;
       h(),
-        (function (e) {
-          (e.TOP_NAV = 'topNav'),
-            (e.TOP_FIXED_NAV = 'topFixedNav'),
-            (e.SIDE_NAV = 'sideFixedNav');
+        (function (n) {
+          (n.TOP_NAV = 'topNav'),
+            (n.TOP_FIXED_NAV = 'topFixedNav'),
+            (n.SIDE_NAV = 'sideFixedNav');
         })(p || (p = {}));
-      var b = t(893);
+      var b = l(893);
       function v() {
-        var e =
-            '/home/runner/work/reactTemplate/reactTemplate/src/pages/HomePage/HomePage.tsx',
-          n = new Function('return this')(),
-          t = '__coverage__',
-          l = n[t] || (n[t] = {});
-        (l[e] && '5e653a3119ba59a2759d5033fde2cbc8f24a0895' === l[e].hash) ||
-          (l[e] = {
-            path: '/home/runner/work/reactTemplate/reactTemplate/src/pages/HomePage/HomePage.tsx',
+        var n =
+            'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\pages\\HomePage\\HomePage.tsx',
+          e = new Function('return this')(),
+          l = '__coverage__',
+          t = e[l] || (e[l] = {});
+        (t[n] && '4c7142245402dd708a9e025bedb6a83566981da1' === t[n].hash) ||
+          (t[n] = {
+            path: 'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\pages\\HomePage\\HomePage.tsx',
             statementMap: {
               0: { start: { line: 9, column: 17 }, end: { line: 41, column: 1 } },
               1: { start: { line: 10, column: 32 }, end: { line: 10, column: 61 } },
@@ -93,9 +94,9 @@
             f: { 0: 0 },
             b: { 0: [0, 0], 1: [0, 0] },
             _coverageSchema: '1a1c01bbd47fc00a2c39e90264f33305004495a9',
-            hash: '5e653a3119ba59a2759d5033fde2cbc8f24a0895'
+            hash: '4c7142245402dd708a9e025bedb6a83566981da1'
           });
-        var a = l[e];
+        var a = t[n];
         return (
           (v = function () {
             return a;
@@ -103,56 +104,56 @@
           a
         );
       }
-      function g(e, n) {
+      function _(n, e) {
         return (
-          (function (e) {
-            if (Array.isArray(e)) return e;
-          })(e) ||
-          (function (e, n) {
-            var t =
-              null == e
+          (function (n) {
+            if (Array.isArray(n)) return n;
+          })(n) ||
+          (function (n, e) {
+            var l =
+              null == n
                 ? null
-                : ('undefined' != typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
-            if (null != t) {
-              var l,
+                : ('undefined' != typeof Symbol && n[Symbol.iterator]) || n['@@iterator'];
+            if (null != l) {
+              var t,
                 a,
-                r,
                 c,
+                r,
                 o = [],
                 i = !0,
-                u = !1;
+                s = !1;
               try {
-                if (((r = (t = t.call(e)).next), 0 === n)) {
-                  if (Object(t) !== t) return;
+                if (((c = (l = l.call(n)).next), 0 === e)) {
+                  if (Object(l) !== l) return;
                   i = !1;
                 } else
                   for (
                     ;
-                    !(i = (l = r.call(t)).done) && (o.push(l.value), o.length !== n);
+                    !(i = (t = c.call(l)).done) && (o.push(t.value), o.length !== e);
                     i = !0
                   );
-              } catch (e) {
-                (u = !0), (a = e);
+              } catch (n) {
+                (s = !0), (a = n);
               } finally {
                 try {
-                  if (!i && null != t.return && ((c = t.return()), Object(c) !== c))
+                  if (!i && null != l.return && ((r = l.return()), Object(r) !== r))
                     return;
                 } finally {
-                  if (u) throw a;
+                  if (s) throw a;
                 }
               }
               return o;
             }
-          })(e, n) ||
-          (function (e, n) {
-            if (!e) return;
-            if ('string' == typeof e) return _(e, n);
-            var t = Object.prototype.toString.call(e).slice(8, -1);
-            'Object' === t && e.constructor && (t = e.constructor.name);
-            if ('Map' === t || 'Set' === t) return Array.from(e);
-            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t))
-              return _(e, n);
-          })(e, n) ||
+          })(n, e) ||
+          (function (n, e) {
+            if (!n) return;
+            if ('string' == typeof n) return g(n, e);
+            var l = Object.prototype.toString.call(n).slice(8, -1);
+            'Object' === l && n.constructor && (l = n.constructor.name);
+            if ('Map' === l || 'Set' === l) return Array.from(n);
+            if ('Arguments' === l || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l))
+              return g(n, e);
+          })(n, e) ||
           (function () {
             throw new TypeError(
               'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
@@ -160,24 +161,24 @@
           })()
         );
       }
-      function _(e, n) {
-        (null == n || n > e.length) && (n = e.length);
-        for (var t = 0, l = new Array(n); t < n; t++) l[t] = e[t];
-        return l;
+      function g(n, e) {
+        (null == e || e > n.length) && (e = n.length);
+        for (var l = 0, t = new Array(e); l < e; l++) t[l] = n[l];
+        return t;
       }
       v(), v().s[0]++;
       const y = function () {
           v().f[0]++;
-          var e = g((v().s[1]++, (0, c.bx)()), 2),
-            n = e[0];
-          e[1];
+          var n = _((v().s[1]++, (0, r.bx)()), 2),
+            e = n[0];
+          n[1];
           return (
             v().s[2]++,
             (0, b.jsxs)(b.Fragment, {
               children: [
                 (0, b.jsx)('header', {
                   className:
-                    n === p.TOP_FIXED_NAV ? (v().b[0][0]++, u) : void v().b[0][1]++,
+                    e === p.TOP_FIXED_NAV ? (v().b[0][0]++, s) : void v().b[0][1]++,
                   style: {
                     gridArea: 'nav',
                     backgroundColor: 'var(--success-color)',
@@ -187,8 +188,8 @@
                 }),
                 (0, b.jsxs)('main', {
                   className:
-                    n === p.TOP_FIXED_NAV
-                      ? (v().b[1][0]++, i()(s, m))
+                    e === p.TOP_FIXED_NAV
+                      ? (v().b[1][0]++, i()(u, m))
                       : (v().b[1][1]++, m),
                   children: [
                     (0, b.jsx)('div', { className: d, children: 'Main 1' }),
@@ -200,15 +201,15 @@
           );
         },
         x = { themeButton: 'ThemeChanger_themeButton_j5pWg' };
-      function T() {
-        var e =
-            '/home/runner/work/reactTemplate/reactTemplate/src/components/ThemeChanger/ThemeChanger.tsx',
-          n = new Function('return this')(),
-          t = '__coverage__',
-          l = n[t] || (n[t] = {});
-        (l[e] && '46947d2d15f38b84d7093fe46ef16ef268a8e29d' === l[e].hash) ||
-          (l[e] = {
-            path: '/home/runner/work/reactTemplate/reactTemplate/src/components/ThemeChanger/ThemeChanger.tsx',
+      function j() {
+        var n =
+            'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\components\\ThemeChanger\\ThemeChanger.tsx',
+          e = new Function('return this')(),
+          l = '__coverage__',
+          t = e[l] || (e[l] = {});
+        (t[n] && 'b50aff0a58769a473b2aaf5516b1cb76c83c4f6d' === t[n].hash) ||
+          (t[n] = {
+            path: 'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\components\\ThemeChanger\\ThemeChanger.tsx',
             statementMap: {
               0: { start: { line: 7, column: 28 }, end: { line: 7, column: 70 } },
               1: { start: { line: 8, column: 24 }, end: { line: 14, column: 3 } },
@@ -315,66 +316,66 @@
             f: { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0 },
             b: { 0: [0, 0], 1: [0, 0, 0] },
             _coverageSchema: '1a1c01bbd47fc00a2c39e90264f33305004495a9',
-            hash: '46947d2d15f38b84d7093fe46ef16ef268a8e29d'
+            hash: 'b50aff0a58769a473b2aaf5516b1cb76c83c4f6d'
           });
-        var a = l[e];
+        var a = t[n];
         return (
-          (T = function () {
+          (j = function () {
             return a;
           }),
           a
         );
       }
-      function j(e, n) {
+      function A(n, e) {
         return (
-          (function (e) {
-            if (Array.isArray(e)) return e;
-          })(e) ||
-          (function (e, n) {
-            var t =
-              null == e
+          (function (n) {
+            if (Array.isArray(n)) return n;
+          })(n) ||
+          (function (n, e) {
+            var l =
+              null == n
                 ? null
-                : ('undefined' != typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
-            if (null != t) {
-              var l,
+                : ('undefined' != typeof Symbol && n[Symbol.iterator]) || n['@@iterator'];
+            if (null != l) {
+              var t,
                 a,
-                r,
                 c,
+                r,
                 o = [],
                 i = !0,
-                u = !1;
+                s = !1;
               try {
-                if (((r = (t = t.call(e)).next), 0 === n)) {
-                  if (Object(t) !== t) return;
+                if (((c = (l = l.call(n)).next), 0 === e)) {
+                  if (Object(l) !== l) return;
                   i = !1;
                 } else
                   for (
                     ;
-                    !(i = (l = r.call(t)).done) && (o.push(l.value), o.length !== n);
+                    !(i = (t = c.call(l)).done) && (o.push(t.value), o.length !== e);
                     i = !0
                   );
-              } catch (e) {
-                (u = !0), (a = e);
+              } catch (n) {
+                (s = !0), (a = n);
               } finally {
                 try {
-                  if (!i && null != t.return && ((c = t.return()), Object(c) !== c))
+                  if (!i && null != l.return && ((r = l.return()), Object(r) !== r))
                     return;
                 } finally {
-                  if (u) throw a;
+                  if (s) throw a;
                 }
               }
               return o;
             }
-          })(e, n) ||
-          (function (e, n) {
-            if (!e) return;
-            if ('string' == typeof e) return S(e, n);
-            var t = Object.prototype.toString.call(e).slice(8, -1);
-            'Object' === t && e.constructor && (t = e.constructor.name);
-            if ('Map' === t || 'Set' === t) return Array.from(e);
-            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t))
-              return S(e, n);
-          })(e, n) ||
+          })(n, e) ||
+          (function (n, e) {
+            if (!n) return;
+            if ('string' == typeof n) return T(n, e);
+            var l = Object.prototype.toString.call(n).slice(8, -1);
+            'Object' === l && n.constructor && (l = n.constructor.name);
+            if ('Map' === l || 'Set' === l) return Array.from(n);
+            if ('Arguments' === l || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l))
+              return T(n, e);
+          })(n, e) ||
           (function () {
             throw new TypeError(
               'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
@@ -382,83 +383,83 @@
           })()
         );
       }
-      function S(e, n) {
-        (null == n || n > e.length) && (n = e.length);
-        for (var t = 0, l = new Array(n); t < n; t++) l[t] = e[t];
-        return l;
+      function T(n, e) {
+        (null == e || e > n.length) && (e = n.length);
+        for (var l = 0, t = new Array(e); l < e; l++) t[l] = n[l];
+        return t;
       }
-      T(), T().s[7]++;
-      var w = function () {
-        var e;
-        T().f[3]++;
-        var n = (T().s[8]++, document.body.getAttribute('data-theme'));
+      j(), j().s[7]++;
+      var D = function () {
+        var n;
+        j().f[3]++;
+        var e = (j().s[8]++, document.body.getAttribute('data-theme'));
         return (
-          T().s[9]++,
-          n
-            ? (T().b[0][0]++, T().s[10]++, (e = n))
-            : (T().b[0][1]++,
-              T().s[11]++,
-              (document.body.dataset.theme = 'light'),
-              T().s[12]++,
-              (e = 'light')),
-          T().s[13]++,
+          j().s[9]++,
           e
+            ? (j().b[0][0]++, j().s[10]++, (n = e))
+            : (j().b[0][1]++,
+              j().s[11]++,
+              (document.body.dataset.theme = 'light'),
+              j().s[12]++,
+              (n = 'light')),
+          j().s[13]++,
+          n
         );
       };
-      T().s[14]++;
-      var M = function (e) {
-        var n;
-        switch ((T().f[4]++, T().s[15]++, e)) {
+      j().s[14]++;
+      var S = function (n) {
+        var e;
+        switch ((j().f[4]++, j().s[15]++, n)) {
           case 'light':
-            T().b[1][0]++, T().s[16]++, (n = 'dark'), T().s[17]++;
+            j().b[1][0]++, j().s[16]++, (e = 'dark'), j().s[17]++;
             break;
           case 'dark':
-            T().b[1][1]++, T().s[18]++, (n = 'light'), T().s[19]++;
+            j().b[1][1]++, j().s[18]++, (e = 'light'), j().s[19]++;
             break;
           default:
-            T().b[1][2]++, T().s[20]++, (n = 'light'), T().s[21]++;
+            j().b[1][2]++, j().s[20]++, (e = 'light'), j().s[21]++;
         }
-        return T().s[22]++, n;
+        return j().s[22]++, e;
       };
-      const N = function () {
-          T().f[0]++;
-          var e = j((T().s[0]++, (0, l.useState)(w)), 2),
-            n = e[0],
-            t = e[1];
+      const M = function () {
+          j().f[0]++;
+          var n = A((j().s[0]++, (0, t.useState)(D)), 2),
+            e = n[0],
+            l = n[1];
           return (
-            T().s[1]++,
-            T().s[6]++,
+            j().s[1]++,
+            j().s[6]++,
             (0, b.jsxs)('button', {
               'data-testid': 'theme-button',
               className: x.themeButton,
               onClick: function () {
-                T().f[1]++,
-                  T().s[2]++,
-                  t(function (e) {
-                    T().f[2]++;
-                    var n = (T().s[3]++, M(e));
+                j().f[1]++,
+                  j().s[2]++,
+                  l(function (n) {
+                    j().f[2]++;
+                    var e = (j().s[3]++, S(n));
                     return (
-                      T().s[4]++,
-                      document.body.setAttribute('data-theme', n),
-                      T().s[5]++,
-                      n
+                      j().s[4]++,
+                      document.body.setAttribute('data-theme', e),
+                      j().s[5]++,
+                      e
                     );
                   });
               },
-              children: ['Change to ', M(n), ' mode']
+              children: ['Change to ', S(e), ' mode']
             })
           );
         },
-        A = 'SelectTemplate_navigationStyles_HJXBB';
-      function k() {
-        var e =
-            '/home/runner/work/reactTemplate/reactTemplate/src/components/SelectTemplate/SelectTemplate.tsx',
-          n = new Function('return this')(),
-          t = '__coverage__',
-          l = n[t] || (n[t] = {});
-        (l[e] && 'ed2a05225b517fe6a9372dbd9a0721a1595caee0' === l[e].hash) ||
-          (l[e] = {
-            path: '/home/runner/work/reactTemplate/reactTemplate/src/components/SelectTemplate/SelectTemplate.tsx',
+        N = 'SelectTemplate_navigationStyles_HJXBB';
+      function C() {
+        var n =
+            'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\components\\SelectTemplate\\SelectTemplate.tsx',
+          e = new Function('return this')(),
+          l = '__coverage__',
+          t = e[l] || (e[l] = {});
+        (t[n] && '073f4655001f0ffd13564e0e3cfd82578d5e5651' === t[n].hash) ||
+          (t[n] = {
+            path: 'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\components\\SelectTemplate\\SelectTemplate.tsx',
             statementMap: {
               0: { start: { line: 13, column: 35 }, end: { line: 17, column: 1 } },
               1: { start: { line: 25, column: 23 }, end: { line: 50, column: 1 } },
@@ -502,35 +503,35 @@
             f: { 0: 0, 1: 0, 2: 0 },
             b: { 0: [0, 0] },
             _coverageSchema: '1a1c01bbd47fc00a2c39e90264f33305004495a9',
-            hash: 'ed2a05225b517fe6a9372dbd9a0721a1595caee0'
+            hash: '073f4655001f0ffd13564e0e3cfd82578d5e5651'
           });
-        var a = l[e];
+        var a = t[n];
         return (
-          (k = function () {
+          (C = function () {
             return a;
           }),
           a
         );
       }
-      k();
+      C();
       var P =
-        (k().s[0]++,
+        (C().s[0]++,
         [
           { value: p.TOP_NAV, text: 'Top navigation' },
           { value: p.TOP_FIXED_NAV, text: 'Top fixed navigation' },
           { value: p.SIDE_NAV, text: 'Side Fixed navigation' }
         ]);
-      k().s[1]++;
-      const O = function (e) {
-          k().f[0]++;
-          var n = (k().s[2]++, e),
-            t = n.selectedValue,
-            l = n.onChangeSelect;
-          n.isFixedNavigation;
+      C().s[1]++;
+      const w = function (n) {
+          C().f[0]++;
+          var e = (C().s[2]++, n),
+            l = e.selectedValue,
+            t = e.onChangeSelect;
+          e.isFixedNavigation;
           return (
-            k().s[3]++,
+            C().s[3]++,
             (0, b.jsxs)('div', {
-              className: A,
+              className: N,
               children: [
                 (0, b.jsx)('label', {
                   htmlFor: 'template-select',
@@ -539,41 +540,41 @@
                 (0, b.jsx)('select', {
                   name: 'templates',
                   id: 'template-select',
-                  value: t,
-                  onChange: function (e) {
+                  value: l,
+                  onChange: function (n) {
                     return (
-                      k().f[1]++,
-                      k().s[4]++,
-                      l ? (k().b[0][0]++, l(e.target.value)) : void k().b[0][1]++
+                      C().f[1]++,
+                      C().s[4]++,
+                      t ? (C().b[0][0]++, t(n.target.value)) : void C().b[0][1]++
                     );
                   },
-                  children: P.map(function (e) {
+                  children: P.map(function (n) {
                     return (
-                      k().f[2]++,
-                      k().s[5]++,
-                      (0, b.jsx)('option', { value: e.value, children: e.text }, e.value)
+                      C().f[2]++,
+                      C().s[5]++,
+                      (0, b.jsx)('option', { value: n.value, children: n.text }, n.value)
                     );
                   })
                 }),
-                (0, b.jsx)('p', { 'data-testid': 'template-select-value', children: t })
+                (0, b.jsx)('p', { 'data-testid': 'template-select-value', children: l })
               ]
             })
           );
         },
-        F = 'MainPage_topBarNavigation_MK9zf',
-        I = 'MainPage_topFixedBarNavigation_Efk9n',
-        C = 'MainPage_sideBarNavigation_jLoH_',
+        O = 'MainPage_topBarNavigation_MK9zf',
+        F = 'MainPage_topFixedBarNavigation_Efk9n',
+        k = 'MainPage_sideBarNavigation_jLoH_',
         E = 'MainPage_textForDemo_UgOAb',
-        D = 'MainPage_headerForDemo_Y6yDG';
-      function V() {
-        var e =
-            '/home/runner/work/reactTemplate/reactTemplate/src/pages/MainPage/MainPage.tsx',
-          n = new Function('return this')(),
-          t = '__coverage__',
-          l = n[t] || (n[t] = {});
-        (l[e] && '6fb6b30c7d9396baac71d80e5aab8ab7ffac9f2f' === l[e].hash) ||
-          (l[e] = {
-            path: '/home/runner/work/reactTemplate/reactTemplate/src/pages/MainPage/MainPage.tsx',
+        I = 'MainPage_headerForDemo_Y6yDG';
+      function U() {
+        var n =
+            'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\pages\\MainPage\\MainPage.tsx',
+          e = new Function('return this')(),
+          l = '__coverage__',
+          t = e[l] || (e[l] = {});
+        (t[n] && 'bbf828353f5474bc358fe45921bb51615f20d44d' === t[n].hash) ||
+          (t[n] = {
+            path: 'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\pages\\MainPage\\MainPage.tsx',
             statementMap: {
               0: { start: { line: 12, column: 17 }, end: { line: 32, column: 1 } },
               1: { start: { line: 13, column: 52 }, end: { line: 15, column: 3 } },
@@ -666,66 +667,66 @@
             f: { 0: 0, 1: 0, 2: 0, 3: 0, 4: 0 },
             b: { 0: [0, 0, 0, 0] },
             _coverageSchema: '1a1c01bbd47fc00a2c39e90264f33305004495a9',
-            hash: '6fb6b30c7d9396baac71d80e5aab8ab7ffac9f2f'
+            hash: 'bbf828353f5474bc358fe45921bb51615f20d44d'
           });
-        var a = l[e];
+        var a = t[n];
         return (
-          (V = function () {
+          (U = function () {
             return a;
           }),
           a
         );
       }
-      function H(e, n) {
+      function V(n, e) {
         return (
-          (function (e) {
-            if (Array.isArray(e)) return e;
-          })(e) ||
-          (function (e, n) {
-            var t =
-              null == e
+          (function (n) {
+            if (Array.isArray(n)) return n;
+          })(n) ||
+          (function (n, e) {
+            var l =
+              null == n
                 ? null
-                : ('undefined' != typeof Symbol && e[Symbol.iterator]) || e['@@iterator'];
-            if (null != t) {
-              var l,
+                : ('undefined' != typeof Symbol && n[Symbol.iterator]) || n['@@iterator'];
+            if (null != l) {
+              var t,
                 a,
-                r,
                 c,
+                r,
                 o = [],
                 i = !0,
-                u = !1;
+                s = !1;
               try {
-                if (((r = (t = t.call(e)).next), 0 === n)) {
-                  if (Object(t) !== t) return;
+                if (((c = (l = l.call(n)).next), 0 === e)) {
+                  if (Object(l) !== l) return;
                   i = !1;
                 } else
                   for (
                     ;
-                    !(i = (l = r.call(t)).done) && (o.push(l.value), o.length !== n);
+                    !(i = (t = c.call(l)).done) && (o.push(t.value), o.length !== e);
                     i = !0
                   );
-              } catch (e) {
-                (u = !0), (a = e);
+              } catch (n) {
+                (s = !0), (a = n);
               } finally {
                 try {
-                  if (!i && null != t.return && ((c = t.return()), Object(c) !== c))
+                  if (!i && null != l.return && ((r = l.return()), Object(r) !== r))
                     return;
                 } finally {
-                  if (u) throw a;
+                  if (s) throw a;
                 }
               }
               return o;
             }
-          })(e, n) ||
-          (function (e, n) {
-            if (!e) return;
-            if ('string' == typeof e) return B(e, n);
-            var t = Object.prototype.toString.call(e).slice(8, -1);
-            'Object' === t && e.constructor && (t = e.constructor.name);
-            if ('Map' === t || 'Set' === t) return Array.from(e);
-            if ('Arguments' === t || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(t))
-              return B(e, n);
-          })(e, n) ||
+          })(n, e) ||
+          (function (n, e) {
+            if (!n) return;
+            if ('string' == typeof n) return H(n, e);
+            var l = Object.prototype.toString.call(n).slice(8, -1);
+            'Object' === l && n.constructor && (l = n.constructor.name);
+            if ('Map' === l || 'Set' === l) return Array.from(n);
+            if ('Arguments' === l || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(l))
+              return H(n, e);
+          })(n, e) ||
           (function () {
             throw new TypeError(
               'Invalid attempt to destructure non-iterable instance.\nIn order to be iterable, non-array objects must have a [Symbol.iterator]() method.'
@@ -733,23 +734,23 @@
           })()
         );
       }
-      function B(e, n) {
-        (null == n || n > e.length) && (n = e.length);
-        for (var t = 0, l = new Array(n); t < n; t++) l[t] = e[t];
-        return l;
+      function H(n, e) {
+        (null == e || e > n.length) && (e = n.length);
+        for (var l = 0, t = new Array(e); l < e; l++) t[l] = n[l];
+        return t;
       }
-      V(), V().s[0]++;
-      V().s[5]++;
-      var X = function (e) {
-        V().f[2]++;
-        var n = (V().s[6]++, e),
-          t = n.selectNavTemplate,
-          l = n.handleSelectNavTemplate;
+      U(), U().s[0]++;
+      U().s[5]++;
+      var B = function (n) {
+        U().f[2]++;
+        var e = (U().s[6]++, n),
+          l = e.selectNavTemplate,
+          t = e.handleSelectNavTemplate;
         return (
-          V().s[7]++,
+          U().s[7]++,
           (0, b.jsx)(b.Fragment, {
             children: (0, b.jsxs)('header', {
-              className: D,
+              className: I,
               children: [
                 (0, b.jsxs)('div', {
                   children: [
@@ -764,68 +765,68 @@
                     })
                   ]
                 }),
-                (0, b.jsx)(O, {
-                  isFixedNavigation: t === p.TOP_FIXED_NAV,
-                  onChangeSelect: function (e) {
-                    return V().f[3]++, V().s[8]++, l(e);
+                (0, b.jsx)(w, {
+                  isFixedNavigation: l === p.TOP_FIXED_NAV,
+                  onChangeSelect: function (n) {
+                    return U().f[3]++, U().s[8]++, t(n);
                   },
-                  selectedValue: t
+                  selectedValue: l
                 }),
-                (0, b.jsx)(N, {})
+                (0, b.jsx)(M, {})
               ]
             })
           })
         );
       };
-      V().s[9]++;
-      var U = function (e) {
-        var n;
-        switch ((V().f[4]++, V().s[10]++, e)) {
+      U().s[9]++;
+      var X = function (n) {
+        var e;
+        switch ((U().f[4]++, U().s[10]++, n)) {
           case p.TOP_NAV:
-            V().b[0][0]++, V().s[11]++, (n = F), V().s[12]++;
+            U().b[0][0]++, U().s[11]++, (e = O), U().s[12]++;
             break;
           case p.TOP_FIXED_NAV:
-            V().b[0][1]++, V().s[13]++, (n = I), V().s[14]++;
+            U().b[0][1]++, U().s[13]++, (e = F), U().s[14]++;
             break;
           case p.SIDE_NAV:
-            V().b[0][2]++, V().s[15]++, (n = C), V().s[16]++;
+            U().b[0][2]++, U().s[15]++, (e = k), U().s[16]++;
             break;
           default:
-            V().b[0][3]++, V().s[17]++, (n = void 0), V().s[18]++;
+            U().b[0][3]++, U().s[17]++, (e = void 0), U().s[18]++;
         }
-        return V().s[19]++, n;
+        return U().s[19]++, e;
       };
-      const G = function () {
-        V().f[0]++;
-        var e = H((V().s[1]++, (0, l.useState)(p.TOP_NAV)), 2),
-          n = e[0],
-          t = e[1];
-        V().s[2]++;
-        var a = function (e) {
-          V().f[1]++, V().s[3]++, t(e);
+      const L = function () {
+        U().f[0]++;
+        var n = V((U().s[1]++, (0, t.useState)(p.TOP_NAV)), 2),
+          e = n[0],
+          l = n[1];
+        U().s[2]++;
+        var a = function (n) {
+          U().f[1]++, U().s[3]++, l(n);
         };
         return (
-          V().s[4]++,
+          U().s[4]++,
           (0, b.jsxs)(b.Fragment, {
             children: [
-              (0, b.jsx)(X, { selectNavTemplate: n, handleSelectNavTemplate: a }),
+              (0, b.jsx)(B, { selectNavTemplate: e, handleSelectNavTemplate: a }),
               (0, b.jsx)('div', {
-                className: U(n),
-                children: (0, b.jsx)(c.j3, { context: [n, a] })
+                className: X(e),
+                children: (0, b.jsx)(r.j3, { context: [e, a] })
               })
             ]
           })
         );
       };
-      function L() {
-        var e =
-            '/home/runner/work/reactTemplate/reactTemplate/src/pages/ErrorPage/ErrorPage.tsx',
-          n = new Function('return this')(),
-          t = '__coverage__',
-          l = n[t] || (n[t] = {});
-        (l[e] && 'c7ffe39daa5c052b581c39d73f841f4751b2086c' === l[e].hash) ||
-          (l[e] = {
-            path: '/home/runner/work/reactTemplate/reactTemplate/src/pages/ErrorPage/ErrorPage.tsx',
+      function G() {
+        var n =
+            'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\pages\\ErrorPage\\ErrorPage.tsx',
+          e = new Function('return this')(),
+          l = '__coverage__',
+          t = e[l] || (e[l] = {});
+        (t[n] && 'e3b9c784c7d5f5c9b446e99f182b43f9bc6a0d65' === t[n].hash) ||
+          (t[n] = {
+            path: 'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\pages\\ErrorPage\\ErrorPage.tsx',
             statementMap: {
               0: { start: { line: 8, column: 18 }, end: { line: 22, column: 1 } },
               1: { start: { line: 9, column: 16 }, end: { line: 9, column: 31 } },
@@ -854,22 +855,22 @@
             f: { 0: 0 },
             b: { 0: [0, 0] },
             _coverageSchema: '1a1c01bbd47fc00a2c39e90264f33305004495a9',
-            hash: 'c7ffe39daa5c052b581c39d73f841f4751b2086c'
+            hash: 'e3b9c784c7d5f5c9b446e99f182b43f9bc6a0d65'
           });
-        var a = l[e];
+        var a = t[n];
         return (
-          (L = function () {
+          (G = function () {
             return a;
           }),
           a
         );
       }
-      L(), L().s[0]++;
+      G(), G().s[0]++;
       const $ = function () {
-        L().f[0]++;
-        var e = (L().s[1]++, (0, c.lk)());
+        G().f[0]++;
+        var n = (G().s[1]++, (0, r.lk)());
         return (
-          L().s[2]++,
+          G().s[2]++,
           (0, b.jsxs)('div', {
             id: 'error-page',
             children: [
@@ -878,30 +879,31 @@
               (0, b.jsx)('p', {
                 children: (0, b.jsx)('i', {
                   children:
-                    (L().b[0][0]++,
-                    (null == e ? void 0 : e.statusText) ||
-                      (L().b[0][1]++, null == e ? void 0 : e.message))
+                    (G().b[0][0]++,
+                    (null == n ? void 0 : n.statusText) ||
+                      (G().b[0][1]++, null == n ? void 0 : n.message))
                 })
               }),
               (0, b.jsx)('p', {
-                children: (0, b.jsx)(r.rU, { to: '/', children: 'Go to the home page' })
+                children: (0, b.jsx)(c.rU, { to: '/', children: 'Go to the home page' })
               })
             ]
           })
         );
       };
       function q() {
-        var e = '/home/runner/work/reactTemplate/reactTemplate/src/index.tsx',
-          n = new Function('return this')(),
-          t = '__coverage__',
-          l = n[t] || (n[t] = {});
-        (l[e] && '28f430a301a7a755a82e380fa44aa4869f3f31b3' === l[e].hash) ||
-          (l[e] = {
-            path: '/home/runner/work/reactTemplate/reactTemplate/src/index.tsx',
+        var n =
+            'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\index.tsx',
+          e = new Function('return this')(),
+          l = '__coverage__',
+          t = e[l] || (e[l] = {});
+        (t[n] && 'a914029b67a82b9e5533346a5276767ac963c298' === t[n].hash) ||
+          (t[n] = {
+            path: 'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\index.tsx',
             statementMap: {
-              0: { start: { line: 10, column: 15 }, end: { line: 17, column: 2 } },
-              1: { start: { line: 19, column: 13 }, end: { line: 19, column: 70 } },
-              2: { start: { line: 21, column: 0 }, end: { line: 25, column: 2 } }
+              0: { start: { line: 15, column: 15 }, end: { line: 22, column: 2 } },
+              1: { start: { line: 24, column: 13 }, end: { line: 24, column: 70 } },
+              2: { start: { line: 26, column: 0 }, end: { line: 30, column: 2 } }
             },
             fnMap: {},
             branchMap: {},
@@ -909,9 +911,9 @@
             f: {},
             b: {},
             _coverageSchema: '1a1c01bbd47fc00a2c39e90264f33305004495a9',
-            hash: '28f430a301a7a755a82e380fa44aa4869f3f31b3'
+            hash: 'a914029b67a82b9e5533346a5276767ac963c298'
           });
-        var a = l[e];
+        var a = t[n];
         return (
           (q = function () {
             return a;
@@ -922,24 +924,31 @@
       q();
       var z =
           (q().s[0]++,
-          (0, r.aj)([
+          (0, c.cP)([
             {
               path: '/',
-              element: (0, b.jsx)(G, {}),
+              element: (0, b.jsx)(L, {}),
               errorElement: (0, b.jsx)($, {}),
               children: [{ index: !0, element: (0, b.jsx)(y, {}) }]
             }
           ])),
         J = (q().s[1]++, (0, a.s)(document.getElementById('app')));
       q().s[2]++,
-        J.render((0, b.jsx)(l.StrictMode, { children: (0, b.jsx)(c.pG, { router: z }) }));
+        J.render(
+          (0, b.jsx)(t.StrictMode, {
+            children: (0, b.jsx)(r.pG, {
+              router: z,
+              fallbackElement: (0, b.jsx)('p', { children: 'Loading...' })
+            })
+          })
+        );
     }
   },
-  (e) => {
-    e.O(0, [216], () => {
-      return (n = 575), e((e.s = n));
-      var n;
+  (n) => {
+    n.O(0, [216], () => {
+      return (e = 575), n((n.s = e));
+      var e;
     });
-    e.O();
+    n.O();
   }
 ]);
