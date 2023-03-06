@@ -924,7 +924,7 @@
       q();
       var z =
           (q().s[0]++,
-          (0, c.aj)([
+          (0, c.cP)([
             {
               path: '/',
               element: (0, b.jsx)(L, {}),
