@@ -10,7 +10,6 @@ module.exports = merge(common, {
   mode: 'development',
   devtool: 'eval', // Recommended choice for development builds with maximum performance.
   devServer: {
-    historyApiFallback: true,
     client: {
       overlay: {
         errors: true,
