@@ -57,18 +57,20 @@ By default, the project port will be 8082. Change `.env` with `HTTP_PORT={your_p
 
 Don't forget to run `yarn install` to install all dependencies.
 
-| Command lines           | Description                                                                         |
-| ----------------------- | ----------------------------------------------------------------------------------- |
-| `yarn start`            | Start the app in development mode and open the app in your default browser          |
-| `yarn build`            | Build project in one package for cloud provider                                     |
-| `yarn cy:open`          | Start cypress HMI to run one or multiple integration tests files (e2e)              |
-| `yarn cy:run`           | Run all integration tests files in command lines (e2e)                              |
-| `yarn it`               | Integration test (e2e) for working flow test in folder `.coverage/cypress-coverage` |
-| `yarn ut`               | Unit test created in jest and coverage in folder `.coverage/jest-coverage`          |
-| `yarn reports:move`     | Copy in folder `.coverage` reports UT and IT                                        |
-| `yarn reports:merge`    | Merge reports with Nyc                                                              |
-| `yarn reports:combined` | Combined reports and create new report in `.coverage/combined`                      |
-| `yarn reports:coverage` | Execute all coverages commands IT/UT and move, merge and combined                   |
+| Command lines           | Description                                                                                                             |
+| ----------------------- | ----------------------------------------------------------------------------------------------------------------------- |
+| `yarn start`            | Start the app in development mode and open the app in your default browser                                              |
+| `yarn build`            | Build project in one package for cloud provider                                                                         |
+| `gh-pages:linux`        | Build project and rename `dist` into `docs` folder to match with gh-pages requirements according to linux environment   |
+| `gh-pages:windows`      | Build project and rename `dist` into `docs` folder to match with gh-pages requirements according to windows environment |
+| `yarn cy:open`          | Start cypress HMI to run one or multiple integration tests files (e2e)                                                  |
+| `yarn cy:run`           | Run all integration tests files in command lines (e2e)                                                                  |
+| `yarn it`               | Integration test (e2e) for working flow test in folder `.coverage/cypress-coverage`                                     |
+| `yarn ut`               | Unit test created in jest and coverage in folder `.coverage/jest-coverage`                                              |
+| `yarn reports:move`     | Copy in folder `.coverage` reports UT and IT                                                                            |
+| `yarn reports:merge`    | Merge reports with Nyc                                                                                                  |
+| `yarn reports:combined` | Combined reports and create new report in `.coverage/combined`                                                          |
+| `yarn reports:coverage` | Execute all coverages commands IT/UT and move, merge and combined                                                       |
 
 ## Project structure
 
