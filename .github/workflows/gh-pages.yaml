@@ -1,5 +1,37 @@
+# # https://github.com/marketplace/actions/deploy-to-github-pages
+# name: Build and Deploy
+
+# on:
+#   push:
+#     branches: [pre-dev]
+
+# permissions:
+#   contents: write
+
+# jobs:
+#   build-and-deploy:
+#     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+
+#     runs-on: ubuntu-latest
+#     steps:
+#       - name: Checkout 🛎️
+#         uses: actions/checkout@v3
+
+#       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+#         run: |
+#           yarn install
+#           yarn gh-pages:linux
+
+#       - name: Deploy 🚀
+#         uses: JamesIves/github-pages-deploy-action@v4
+#         with:
+#           branch: gh-pages
+#           folder: docs # The folder the action should deploy.
+#           target-folder: docs
+#           # commit-message: "feat [AUTO] Automaticly update gh-pages page with dev branch"
+
 # https://github.com/marketplace/actions/deploy-to-github-pages
-name: Build and Deploy
+name: Build and Deploy on github-pages
 
 on:
   push:
@@ -10,22 +42,27 @@ permissions:
 
 jobs:
   build-and-deploy:
-    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
+    # concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
 
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
       - name: Install and Build 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
         run: |
+          git checkout origin/gh-pages
           yarn install
           yarn gh-pages:linux
+          git add docs || echo "No modification to add pop"
+          (git commit -m "feat [AUTO] Update docs folder for gh-pages branch" && git push) || echo 'No modification to save'
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4
-        with:
-          branch: gh-pages
-          folder: docs # The folder the action should deploy.
-          target-folder: docs
-          # commit-message: "feat [AUTO] Automaticly update gh-pages page with dev branch"
+      # - name: Deploy 🚀
+      #   uses: JamesIves/github-pages-deploy-action@v4
+      #   with:
+      #     branch: gh-pages
+      #     folder: docs # The folder the action should deploy.
+      #     target-folder: docs
+      # commit-message: "feat [AUTO] Automaticly update gh-pages page with dev branch"
