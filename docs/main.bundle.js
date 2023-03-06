@@ -897,13 +897,13 @@
           e = new Function('return this')(),
           l = '__coverage__',
           t = e[l] || (e[l] = {});
-        (t[n] && 'a345fcb68f14f9cfeaca02bab540e6e4d2c62509' === t[n].hash) ||
+        (t[n] && 'a914029b67a82b9e5533346a5276767ac963c298' === t[n].hash) ||
           (t[n] = {
             path: 'C:\\Users\\alanl\\Documents\\Documents_Alan\\development\\reactTemplate\\src\\index.tsx',
             statementMap: {
-              0: { start: { line: 10, column: 15 }, end: { line: 17, column: 2 } },
-              1: { start: { line: 19, column: 13 }, end: { line: 19, column: 70 } },
-              2: { start: { line: 21, column: 0 }, end: { line: 25, column: 2 } }
+              0: { start: { line: 15, column: 15 }, end: { line: 22, column: 2 } },
+              1: { start: { line: 24, column: 13 }, end: { line: 24, column: 70 } },
+              2: { start: { line: 26, column: 0 }, end: { line: 30, column: 2 } }
             },
             fnMap: {},
             branchMap: {},
@@ -911,7 +911,7 @@
             f: {},
             b: {},
             _coverageSchema: '1a1c01bbd47fc00a2c39e90264f33305004495a9',
-            hash: 'a345fcb68f14f9cfeaca02bab540e6e4d2c62509'
+            hash: 'a914029b67a82b9e5533346a5276767ac963c298'
           });
         var a = t[n];
         return (
