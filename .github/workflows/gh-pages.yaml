@@ -33,7 +33,9 @@ jobs:
       - name: Install client's dependencies
         run: yarn install
       - name: Update 'docs' folder from builded app
-        run: yarn gh-pages:linux
+        run: |
+          yarn gh-pages:linux
+          git status
 
       - name: Commit & Push 'docs' folder
         run: |
