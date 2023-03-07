@@ -1,0 +1,7 @@
+@import '../../css-vars.css';
+
+.themeButton {
+  color: var(--primary-text);
+  background-color: var(--primary-color);
+  border: none;
+}

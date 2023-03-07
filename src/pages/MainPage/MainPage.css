@@ -1,0 +1,30 @@
+/** 
+ * Update the number of element on `grid-template` is correlated with 
+ * the number of element on `grid-template-columns` to HomePage.css
+*/
+
+.topBarNavigation {
+  display: grid;
+  grid-template: 'nav nav nav' 'main main main';
+}
+
+.topFixedBarNavigation {
+  display: grid;
+  grid-template: 'nav nav nav' 'main main main';
+}
+
+.sideBarNavigation {
+  display: grid;
+  grid-template: 'nav main main' 'nav main main' 'nav main main';
+}
+
+.textForDemo {
+  margin: 0px;
+}
+
+.headerForDemo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 16px;
+}
