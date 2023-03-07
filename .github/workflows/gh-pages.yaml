@@ -1,7 +1,7 @@
 # This github-action allow to automaticly update in the 'docs' folder of gh-pages branch when something is push on the dev branch
 # My personal github-pages configuration is pointing in the 'docs' folder
 
-name: Build and Deploy for github-pages
+name: Build & Deploy for github-pages
 
 on:
   push:
@@ -11,6 +11,21 @@ permissions:
   contents: write
 
 jobs:
+  clear:
+    runs-on: ubuntu-latest
+    name: A job to delete old workflow runs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Delete workflow runs older than 24h
+        uses: MajorScruffy/delete-old-workflow-runs@v0.3.0
+        with:
+          repository: alanlachkar/reactTemplate
+          workflow: '.github/workflows/gh-pages.yaml'
+          older-than-seconds: 86400  # 24 hours
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   build-and-deploy:
     concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
