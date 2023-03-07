@@ -1,37 +1,33 @@
-name: Update docs folder of gh-pages branch
+# This github-action allow to automaticly update at the root of gh-pages branch when something is push on the dev branch
+# My personal github-pages configuration is pointing at the root directory
+
+name: Build and Deploy for github-pages
 
 on:
   push:
-    branches: ['dev']
+    branches: [dev]
+
+permissions:
+  contents: write
 
 jobs:
-  build-app-for-gh-pages:
+  build-and-deploy:
+    concurrency: ci-${{ github.ref }} # Recommended if you intend to make multiple deployments in quick succession.
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        node-version: [18.x]
-        # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
-    steps:
-      - uses: actions/checkout@v3
-      - name: Use Node.js ${{ matrix.node-version }}
-        uses: actions/setup-node@v3
-        with:
-          node-version: ${{ matrix.node-version }}
-          cache: 'yarn'
 
-      - name: Go to gh-pages branch
+    steps:
+      - name: Checkout 🛎️
         uses: actions/checkout@v3
-        with:
-          # To fetch all history for all branches and tags
-          fetch-depth: 0
-          ref: gh-pages
 
       - name: Install client's dependencies
         run: yarn install
-      - name: Update docs folder from builded app
-        run: yarn gh-pages:linux
 
-      - name: Push docs folder on gh-pages branch
-        run: |
-          git add docs || echo "No docs folder modification to add pop"
-          (git commit -m "[AUTO] Update docs folder" && git push) || echo 'No modification to save'
+      - name: Build the app 🔧
+        run: yarn build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: dist # The folder the action should deploy.
+          # No target-folder => push the folder at the root directory

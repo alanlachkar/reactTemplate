@@ -1,3 +1,8 @@
+/** 
+ * Update the number of element on `grid-template` is correlated with 
+ * the number of element on `grid-template-columns` to HomePage.css
+*/
+
 .topBarNavigation {
   display: grid;
   grid-template: 'nav nav nav' 'main main main';
