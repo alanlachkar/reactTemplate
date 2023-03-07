@@ -13,6 +13,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
       - uses: actions/checkout@v3
+      - uses: fregante/setup-git-user@v2 # https://github.com/fregante/setup-git-user
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -32,7 +33,6 @@ jobs:
         run: yarn gh-pages:linux
 
       - name: Push docs folder on gh-pages branch
-      - uses: fregante/setup-git-user@v2 # https://github.com/fregante/setup-git-user
         run: |
           git add docs || echo "No modification to add pop"
           (git commit -m "feat [AUTO] Update docs folder" && git push) || echo 'No modification to save'
