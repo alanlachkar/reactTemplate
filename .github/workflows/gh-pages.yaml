@@ -1,4 +1,7 @@
-# # https://github.com/marketplace/actions/deploy-to-github-pages
+# This github-action allow to automaticly update the 'docs' folder of gh-pages branch when something is push on the dev branch
+# My personal github-pages configuration is pointing on the 'docs' folder
+
+name: Build and Deploy
 
 on:
   push:
@@ -29,10 +32,10 @@ jobs:
 
       - name: Install client's dependencies
         run: yarn install
-      - name: Update docs folder from builded app
+      - name: Update 'docs' folder from builded app
         run: yarn gh-pages:linux
 
-      - name: Push docs folder on gh-pages branch
+      - name: Commit & Push 'docs' folder
         run: |
           git add docs || echo "No modification to add pop"
           (git commit -m "feat [AUTO] Update docs folder" && git push) || echo 'No modification to save'

@@ -23,7 +23,7 @@ const HomePage = () => {
           color: 'var(--primary-text)'
         }}
       >
-        Navigation
+        Navigation bar
       </header>
       <main
         // /!\ Keep this className only if you want and fixed top navigation bar
