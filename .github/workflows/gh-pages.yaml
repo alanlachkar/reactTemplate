@@ -1,5 +1,5 @@
-# This github-action allow to automaticly update at the root of gh-pages branch when something is push on the dev branch
-# My personal github-pages configuration is pointing at the root directory
+# This github-action allow to automaticly update in the 'docs' folder of gh-pages branch when something is push on the dev branch
+# My personal github-pages configuration is pointing in the 'docs' folder
 
 name: Build and Deploy for github-pages
 
@@ -30,4 +30,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist # The folder the action should deploy.
-          # No target-folder => push the folder at the root directory
+          target-folder: docs
