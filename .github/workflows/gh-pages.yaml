@@ -5,7 +5,7 @@ name: Build and Deploy for github-pages
 
 on:
   push:
-    branches: [pre-dev]
+    branches: [dev]
 
 permissions:
   contents: write
