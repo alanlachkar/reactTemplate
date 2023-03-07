@@ -10,6 +10,21 @@ permissions:
   pull-requests: write
 
 jobs:
+  clear:
+    runs-on: ubuntu-latest
+    name: A job to delete old workflow runs
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Delete workflow runs older than 24h
+        uses: MajorScruffy/delete-old-workflow-runs@v0.3.0
+        with:
+          repository: alanlachkar/reactTemplate
+          workflow: '.github/workflows/actions.yaml'
+          older-than-seconds: 7776000 # 3 months
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   dependabot:
     runs-on: ubuntu-latest
     if: ${{ github.actor == 'dependabot[bot]' }}
