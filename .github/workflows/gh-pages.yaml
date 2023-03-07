@@ -1,5 +1,5 @@
-# This github-action allow to automaticly update the 'docs' folder of gh-pages branch when something is push on the dev branch
-# My personal github-pages configuration is pointing on the 'docs' folder
+# This github-action allow to automaticly update at the root of gh-pages branch when something is push on the dev branch
+# My personal github-pages configuration is pointing at the root directory
 
 name: Build and Deploy for github-pages
 
@@ -22,7 +22,7 @@ jobs:
       - name: Install client's dependencies
         run: yarn install
 
-      - name: Build the app 🔧 # This example project is built using npm and outputs the result to the 'build' folder. Replace with the commands required to build your project, or remove this step entirely if your site is pre-built.
+      - name: Build the app 🔧
         run: yarn build
 
       - name: Deploy 🚀
@@ -30,3 +30,4 @@ jobs:
         with:
           branch: gh-pages
           folder: dist # The folder the action should deploy.
+          # No target-folder => push the folder at the root directory
