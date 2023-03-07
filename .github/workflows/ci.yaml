@@ -21,7 +21,6 @@ jobs:
         uses: MajorScruffy/delete-old-workflow-runs@v0.3.0
         with:
           repository: alanlachkar/reactTemplate
-          workflow: '.github/workflows/ci.yaml'
           older-than-seconds: 86400
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
