@@ -1,8 +1,11 @@
-name: Update docs folder of gh-pages branch
+# This github-action allow to automaticly update the 'docs' folder of gh-pages branch when something is push on the dev branch
+# My personal github-pages configuration is pointing on the 'docs' folder
+
+name: Build and Deploy
 
 on:
   push:
-    branches: ['dev']
+    branches: ['pre-dev']
 
 jobs:
   build-app-for-gh-pages:
@@ -13,6 +16,7 @@ jobs:
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
     steps:
       - uses: actions/checkout@v3
+      - uses: fregante/setup-git-user@v2 # https://github.com/fregante/setup-git-user
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
@@ -28,10 +32,12 @@ jobs:
 
       - name: Install client's dependencies
         run: yarn install
-      - name: Update docs folder from builded app
-        run: yarn gh-pages:linux
-
-      - name: Push docs folder on gh-pages branch
+      - name: Update 'docs' folder from builded app
         run: |
-          git add docs || echo "No docs folder modification to add pop"
-          (git commit -m "[AUTO] Update docs folder" && git push) || echo 'No modification to save'
+          yarn gh-pages:linux
+          git status
+
+      - name: Commit & Push 'docs' folder
+        run: |
+          git add docs || echo "No modification to add pop"
+          (git commit -m "feat [AUTO] Update docs folder" && git push) || echo 'No modification to save'
