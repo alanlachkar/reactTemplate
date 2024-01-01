@@ -54,7 +54,7 @@
     "webpack-merge": "^5.10.0"
   },
   "dependencies": {
-    "@types/react": "^18.2.45",
+    "@types/react": "^18.2.46",
     "@types/react-dom": "^18.2.18",
     "axios": "^1.6.2",
     "classnames": "^2.3.2",
